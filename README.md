@@ -1,1 +1,1 @@
-** Apple Stock Market Forecast using NNs in TORCH **
+Apple Stock Market Forecast using NNs in TORCH
