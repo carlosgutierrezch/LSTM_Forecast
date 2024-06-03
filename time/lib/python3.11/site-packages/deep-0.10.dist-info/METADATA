@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: deep
+Version: 0.10
+Summary: Easy, flexible deep comparison and testing of structured data
+Home-page: http://code.google.com/p/python-deep/
+Download-URL: http://code.google.com/p/python-deep/downloads/list
+Author: Fergal Daly
+Author-email: fergald@gmail.com
+License: LGPL
+
