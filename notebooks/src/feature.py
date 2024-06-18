@@ -28,7 +28,7 @@ class AppleFeature:
         
         return df
     
-    def time_change(df:pd.DataFrame)-> pd.DataFrame:
+    def time_change(self, df:pd.DataFrame)-> pd.DataFrame:
     
         """Function that evaluate the increase or decrease of the Value
         over the years of all the dataset
