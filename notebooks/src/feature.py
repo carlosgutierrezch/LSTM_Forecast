@@ -1,93 +1,85 @@
+"""
+This module contains the TimeConfig class, which provides methods for transforming time series
+data and adding time-based features.
+"""
+
 import pandas as pd
-from datetime import datetime
+
 class TimeConfig:
+    """
+    A class used to represent time configuration for various operations on time series data.
+    """
 
+    @staticmethod
+    def time_transformation(df: pd.DataFrame, columns: list) -> pd.DataFrame:
+        """
+        Transforms the time series DataFrame to include specified columns.
 
-    def __init__(self):
-        pass
-    
-    def time_transformation(df: pd.DataFrame,columns=list)-> pd.DataFrame:
-        
-        """_summary_
-        
         Args:
             df (pd.DataFrame): Time Series DataFrame
+            columns (list): List of column names to retain in the transformed DataFrame
 
         Returns:
-            _type_: Time Series DataFrame
+            pd.DataFrame: Transformed Time Series DataFrame
         """
-        
-        if 'Date' not in columns:                                                        # To add the 'Date' column to df
+        # Ensure 'Date' column is included
+        if 'Date' not in columns:
             columns.append('Date')
 
-        df= df[columns].copy()                                   
-                              
+        # Only taking specified columns
+        df = df[columns].copy()
+
+        # Process 'Date' column to datetime
+        df['Date'] = pd.to_datetime(df['Date'])
+
+        # Sort by 'Date'
+        df.sort_values(by='Date', inplace=True)
+
+        # Reset index
+        df.reset_index(inplace=True, drop=True)
+
+        # Set 'Date' as the index
+        df.set_index('Date', inplace=True)
+
+        # Clean column names (removing '$' and converting to float if necessary)
         for column in columns:
             if column != 'Date' and df[column].dtype == 'object':
-                df[column]= df[column].str.replace('$','',regex=False).astype(float)     # Replacing the $ value
-                        
-        df['Date']= pd.to_datetime(df['Date'])                                           # To datetime
-        
-        df.sort_values(by='Date',inplace=True)                                              
-        
-        df.reset_index(inplace=True)
-        
-        df.drop(columns='index',inplace=True)
-        
-        df.set_index('Date',inplace=True)
-        
-        df.rename(columns={"Close/Last":"Value"},inplace=True)
-        
+                df[column] = df[column].str.replace('$', '', regex=False).astype(float)
+
         return df
-    
-    def time_features(df: pd.DataFrame)-> pd.DataFrame:
-        
-        """Function that receives time series data
-        and retrieves a transformed dataframe with
-        time features
+
+    @staticmethod
+    def time_features(df: pd.DataFrame) -> pd.DataFrame:
+        """
+        Adds time-based features to the DataFrame.
 
         Args:
-            df (pd.DataFrame): Time Series DataFrame
+            df (pd.DataFrame): Input DataFrame
 
         Returns:
-            pd.DataFrame: Time Series DataFrame with
-            features
+            pd.DataFrame: DataFrame with time-based features
         """
-        
-        df['week']= df.index.dayofweek              # DatetimeIndex functions for feature engineering
-        df['month']= df.index.month
-        df['year']= df.index.year
-        df['day_of_week']= df.index.day_name()
-        df['quarter']= df.index.quarter
-        
+        df['year'] = df.index.year
+        df['month'] = df.index.month
+        df['day'] = df.index.day
+        df['day_of_week'] = df.index.dayofweek
+        df['day_of_year'] = df.index.dayofyear
+        df['week_of_year'] = df.index.isocalendar().week
+
         return df
-    
-    def time_change(df: pd.DataFrame)-> pd.DataFrame:
-    
-        """Function that evaluate the increase or decrease of the Value
-        over the years of all the dataset
-        
+
+    @staticmethod
+    def time_change(df: pd.DataFrame) -> pd.DataFrame:
+        """
+        Adds features representing changes in the DataFrame.
+
         Args:
-            df (pd.DataFrame): Time Series DataFrame
-        
-        Returns:
-            _type_: Groupby Dataset with all the transformations
-        """
-        
-        df= df.groupby(df.index.year).agg({'Value':'sum'}).astype(int)         # Gathering of data
-        nuevo= df.iloc[:,0].tolist()                                                 
-        
-        empty_list= []
-        for i in range(1,len(nuevo)):
-            difference= (nuevo[i]-nuevo[i-1])/nuevo[i-1]*100                        # Calculating the change
-            empty_list.append(difference)
-            
-        if len(nuevo) != len(empty_list):                                           # Adding the information the the dataset
-            df["change"]= [0]+empty_list
-            df.change= df.change.astype(int)
-        
-            
-        return df
-    
+            df (pd.DataFrame): Input DataFrame
 
-   
+        Returns:
+            pd.DataFrame: DataFrame with change features
+        """
+        df['value_change'] = df['Value'].diff()
+        df['value_pct_change'] = df['Value'].pct_change()
+
+        return df
