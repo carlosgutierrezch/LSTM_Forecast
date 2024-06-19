@@ -22,26 +22,19 @@ class TimeConfig:
         Returns:
             pd.DataFrame: Transformed Time Series DataFrame
         """
-        # Ensure 'Date' column is included
         if 'Date' not in columns:
             columns.append('Date')
 
-        # Only taking specified columns
         df = df[columns].copy()
 
-        # Process 'Date' column to datetime
         df['Date'] = pd.to_datetime(df['Date'])
 
-        # Sort by 'Date'
         df.sort_values(by='Date', inplace=True)
 
-        # Reset index
         df.reset_index(inplace=True, drop=True)
 
-        # Set 'Date' as the index
         df.set_index('Date', inplace=True)
 
-        # Clean column names (removing '$' and converting to float if necessary)
         for column in columns:
             if column != 'Date' and df[column].dtype == 'object':
                 df[column] = df[column].str.replace('$', '', regex=False).astype(float)
