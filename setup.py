@@ -7,7 +7,7 @@ __version__='0.0.0'
 
 REPO_NAME= 'LSTM-Forecast'
 AUTHOR_USER_NAME= 'AETNA-68'
-SRC_REPO= 'Time Series Forecast'
+SRC_REPO= 'TimeSeriesForecast'
 AUTHOR_EMAIL='aetna68corp@gmail.com'
 
 setuptools.setup(
