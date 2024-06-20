@@ -117,8 +117,8 @@ class TimeConfig:
         Returns:
             pd.DataFrame: DataFrame with change features
         """
-        # if 'Value' not in df.columns:
-        #     raise ValueError("Column 'Value' not found in DataFrame")
+        if 'Value' not in df.columns:
+            raise ValueError("Column 'Value' not found in DataFrame")
         x_1= df.groupby(df.index.year).agg({'Value':'sum'}).astype(int).copy()
         x_2= x_1.Value.tolist()
         diferencias = []
@@ -129,7 +129,7 @@ class TimeConfig:
         x_1['Change']= [0]+diferencias
 
         return x_1
-    
+
     @staticmethod
     def process_chain(path:str,columns=list[str])-> pd.DataFrame:
         """
