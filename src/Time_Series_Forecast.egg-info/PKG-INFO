@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: Time-Series-Forecast
+Version: 0.0.0
+Summary: Ml app
+Home-page: https://github.com/AETNA-68/LSTM-Forecast
+Author: AETNA-68
+Author-email: aetna68corp@gmail.com
+Project-URL: Bug tracker, https://github.com/AETNA-68/LSTM-Forecast/issues
+
+Apple Stock Market Forecast using NNs in TORCH

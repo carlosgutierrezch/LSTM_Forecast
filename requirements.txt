@@ -141,3 +141,4 @@ Werkzeug==3.0.3
 wrapt==1.16.0
 zipp==3.19.2
 zope.interface==6.4.post2
+-e .
