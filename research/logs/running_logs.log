@@ -1,0 +1,26 @@
+[2024-06-27 11:36:21,704:INFO:common:yaml file: config/config.yaml loaded successfully]
+[2024-06-27 11:36:21,708:INFO:common:yaml file: params.yaml loaded successfully]
+[2024-06-27 11:36:21,710:INFO:common:yaml file: schema.yaml loaded successfully]
+[2024-06-27 11:36:21,711:INFO:common:created directory at: artifacts]
+[2024-06-27 11:36:21,711:INFO:common:created directory at: artifacts/data_ingestion]
+[2024-06-27 11:36:22,507:INFO:519408658:artifacts/data_ingestion/data-forecast.zip downloaded successfully with this information Server: GitHub.com
+Date: Thu, 27 Jun 2024 09:36:22 GMT
+Content-Type: text/html; charset=utf-8
+Vary: X-PJAX, X-PJAX-Container, Turbo-Visit, Turbo-Frame, Accept-Encoding, Accept, X-Requested-With
+ETag: W/"c4c578f9be8f24ca0ccbde224b242eb6"
+Cache-Control: max-age=0, private, must-revalidate
+Strict-Transport-Security: max-age=31536000; includeSubdomains; preload
+X-Frame-Options: deny
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 0
+Referrer-Policy: no-referrer-when-downgrade
+Content-Security-Policy: default-src 'none'; base-uri 'self'; child-src github.com/assets-cdn/worker/ gist.github.com/assets-cdn/worker/; connect-src 'self' uploads.github.com www.githubstatus.com collector.github.com raw.githubusercontent.com api.github.com github-cloud.s3.amazonaws.com github-production-repository-file-5c1aeb.s3.amazonaws.com github-production-upload-manifest-file-7fdce7.s3.amazonaws.com github-production-user-asset-6210df.s3.amazonaws.com api.githubcopilot.com objects-origin.githubusercontent.com copilot-proxy.githubusercontent.com/v1/engines/github-completion/completions *.actions.githubusercontent.com wss://*.actions.githubusercontent.com productionresultssa0.blob.core.windows.net/ productionresultssa1.blob.core.windows.net/ productionresultssa2.blob.core.windows.net/ productionresultssa3.blob.core.windows.net/ productionresultssa4.blob.core.windows.net/ productionresultssa5.blob.core.windows.net/ productionresultssa6.blob.core.windows.net/ productionresultssa7.blob.core.windows.net/ productionresultssa8.blob.core.windows.net/ productionresultssa9.blob.core.windows.net/ productionresultssa10.blob.core.windows.net/ productionresultssa11.blob.core.windows.net/ productionresultssa12.blob.core.windows.net/ productionresultssa13.blob.core.windows.net/ productionresultssa14.blob.core.windows.net/ productionresultssa15.blob.core.windows.net/ productionresultssa16.blob.core.windows.net/ productionresultssa17.blob.core.windows.net/ productionresultssa18.blob.core.windows.net/ productionresultssa19.blob.core.windows.net/ github-production-repository-image-32fea6.s3.amazonaws.com github-production-release-asset-2e65be.s3.amazonaws.com insights.github.com wss://alive.github.com; font-src github.githubassets.com; form-action 'self' github.com gist.github.com copilot-workspace.githubnext.com objects-origin.githubusercontent.com; frame-ancestors 'none'; frame-src viewscreen.githubusercontent.com notebooks.githubusercontent.com; img-src 'self' data: blob: github.githubassets.com media.githubusercontent.com camo.githubusercontent.com identicons.github.com avatars.githubusercontent.com github-cloud.s3.amazonaws.com objects.githubusercontent.com secured-user-images.githubusercontent.com/ user-images.githubusercontent.com/ private-user-images.githubusercontent.com opengraph.githubassets.com github-production-user-asset-6210df.s3.amazonaws.com customer-stories-feed.github.com spotlights-feed.github.com objects-origin.githubusercontent.com *.githubusercontent.com; manifest-src 'self'; media-src github.com user-images.githubusercontent.com/ secured-user-images.githubusercontent.com/ private-user-images.githubusercontent.com github-production-user-asset-6210df.s3.amazonaws.com gist.github.com; script-src github.githubassets.com; style-src 'unsafe-inline' github.githubassets.com; upgrade-insecure-requests; worker-src github.com/assets-cdn/worker/ gist.github.com/assets-cdn/worker/
+Set-Cookie: _gh_sess=Bn6Wk2iR244a4EdUZymQp28qnYb9Dx7lNmv3%2FQ2hA1J8MuPX%2Fa3CoAjN6TZKxYRjC%2ByTYP%2F%2FdWQzauwiq5I92EFMgNfuAaiC4eLRWqe7uv9QlXVClrP%2FWsSuvfmJjsNJwxFP2lFaTuJAptCkWDJlVW84MQAo8Ls2LnFjijqbZwh258jCj1%2FEhUk6k%2Fv8Dep5bZMu24BUJxAwsGzGMSQoXQ8pg701dM0w2fmaABzDkCPENOVS%2FDCgcYjWEtwyvUWooX0VqRT%2B6mT8lSKr4FpJFQ%3D%3D--f14OXWAj%2FENqfz1d--l0j%2Bbsk3DVm8WYvCjJhzCQ%3D%3D; Path=/; HttpOnly; Secure; SameSite=Lax
+Set-Cookie: _octo=GH1.1.842288389.1719480981; Path=/; Domain=github.com; Expires=Fri, 27 Jun 2025 09:36:21 GMT; Secure; SameSite=Lax
+Set-Cookie: logged_in=no; Path=/; Domain=github.com; Expires=Fri, 27 Jun 2025 09:36:21 GMT; HttpOnly; Secure; SameSite=Lax
+Accept-Ranges: bytes
+Transfer-Encoding: chunked
+X-GitHub-Request-Id: F706:39B3C2:2F42369:304535F:667D3295
+connection: close
+
+]

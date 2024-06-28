@@ -186,3 +186,57 @@ X-GitHub-Request-Id: F1A5:27DBA:160DF941:1684C75D:667C157C
 connection: close
 
 ]
+[2024-06-27 11:13:31,764:INFO:common:yaml file: config/config.yaml loaded successfully]
+[2024-06-27 11:13:31,768:INFO:common:yaml file: params.yaml loaded successfully]
+[2024-06-27 11:13:31,770:INFO:common:yaml file: schema.yaml loaded successfully]
+[2024-06-27 11:13:31,771:INFO:common:created directory at: artifacts]
+[2024-06-27 11:13:31,772:INFO:common:created directory at: artifacts/data_ingestion]
+[2024-06-27 11:14:51,008:INFO:common:yaml file: config/config.yaml loaded successfully]
+[2024-06-27 11:14:51,010:INFO:common:yaml file: params.yaml loaded successfully]
+[2024-06-27 11:14:51,012:INFO:common:yaml file: schema.yaml loaded successfully]
+[2024-06-27 11:14:51,012:INFO:common:created directory at: artifacts]
+[2024-06-27 11:14:51,014:INFO:common:created directory at: artifacts/data_ingestion]
+[2024-06-27 11:43:04,284:INFO:common:yaml file: config/config.yaml loaded successfully]
+[2024-06-27 11:43:04,286:INFO:common:yaml file: params.yaml loaded successfully]
+[2024-06-27 11:43:04,288:INFO:common:yaml file: schema.yaml loaded successfully]
+[2024-06-27 11:43:04,289:INFO:common:created directory at: artifacts]
+[2024-06-27 11:43:04,290:INFO:common:created directory at: artifacts/data_ingestion]
+[2024-06-27 11:43:04,292:INFO:2465324063:File already exists of size: ~ 275 KB]
+[2024-06-27 15:50:42,657:INFO:common:yaml file: config/config.yaml loaded successfully]
+[2024-06-27 15:50:42,659:INFO:common:yaml file: params.yaml loaded successfully]
+[2024-06-27 15:50:42,661:INFO:common:yaml file: schema.yaml loaded successfully]
+[2024-06-27 15:50:42,661:INFO:common:created directory at: artifacts]
+[2024-06-27 15:50:42,662:INFO:common:created directory at: artifacts/data_ingestion]
+[2024-06-27 15:50:42,663:INFO:2327117404:File already exists of size: ~ 275 KB]
+[2024-06-27 15:51:06,895:INFO:common:yaml file: config/config.yaml loaded successfully]
+[2024-06-27 15:51:06,897:INFO:common:yaml file: params.yaml loaded successfully]
+[2024-06-27 15:51:06,898:INFO:common:yaml file: schema.yaml loaded successfully]
+[2024-06-27 15:51:06,899:INFO:common:created directory at: artifacts]
+[2024-06-27 15:51:06,900:INFO:common:created directory at: artifacts/data_ingestion]
+[2024-06-27 15:51:07,634:INFO:2327117404:artifacts/data_ingestion/data-forecast.zip download! with following info: 
+Connection: close
+Content-Length: 48759
+Cache-Control: max-age=300
+Content-Security-Policy: default-src 'none'; style-src 'unsafe-inline'; sandbox
+Content-Type: application/zip
+ETag: "b242fa9b06100c658c6c8e3096b0d4b17390be7861c1ab51cdf6a2a7d19cf86c"
+Strict-Transport-Security: max-age=31536000
+X-Content-Type-Options: nosniff
+X-Frame-Options: deny
+X-XSS-Protection: 1; mode=block
+X-GitHub-Request-Id: 883E:39B45B:8726BB:8DDC0D:667D6E4A
+Accept-Ranges: bytes
+Date: Thu, 27 Jun 2024 13:51:07 GMT
+Via: 1.1 varnish
+X-Served-By: cache-mad22030-MAD
+X-Cache: MISS
+X-Cache-Hits: 0
+X-Timer: S1719496267.379483,VS0,VE208
+Vary: Authorization,Accept-Encoding,Origin
+Access-Control-Allow-Origin: *
+Cross-Origin-Resource-Policy: cross-origin
+X-Fastly-Request-ID: 01da08406f32e2820bb57fc3dc4b527c43489302
+Expires: Thu, 27 Jun 2024 13:56:07 GMT
+Source-Age: 0
+
+]
