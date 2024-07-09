@@ -1,3 +1,10 @@
+"""
+Script where a request to the url is made to download the file from an URL
+-
+A second function is located inside of the DataIngestion class "extract_zip_file"
+that unzip the file and send the file to a directory defined in the yaml file
+"""
+
 import os
 import urllib.request as request
 import zipfile

@@ -1,3 +1,7 @@
+"""
+Script with a class where relies the parameters of the yaml files and the data ingestion address
+"""
+
 from TimeSeriesForecast.constants import *
 from TimeSeriesForecast.utils.common import read_yaml,create_directories
 from TimeSeriesForecast.entity.config_entity import DataIngestionConfig
