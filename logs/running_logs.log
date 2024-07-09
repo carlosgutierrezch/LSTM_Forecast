@@ -240,3 +240,11 @@ Expires: Thu, 27 Jun 2024 13:56:07 GMT
 Source-Age: 0
 
 ]
+[2024-07-09 14:53:08,390:INFO:main:>>>>>> stage Data ingestion stage started <<<<<]
+[2024-07-09 14:53:08,392:INFO:common:yaml file: config/config.yaml loaded successfully]
+[2024-07-09 14:53:08,404:INFO:common:yaml file: params.yaml loaded successfully]
+[2024-07-09 14:53:08,405:INFO:common:yaml file: schema.yaml loaded successfully]
+[2024-07-09 14:53:08,405:INFO:common:created directory at: artifacts]
+[2024-07-09 14:53:08,405:INFO:common:created directory at: artifacts/data_ingestion]
+[2024-07-09 14:53:08,405:INFO:data_ingestion:File already exists of size: ~ 48 KB]
+[2024-07-09 14:53:08,408:INFO:main:>>>>>>>>> stage Data ingestion stage completed! <<<<<<]
