@@ -1,7 +1,11 @@
 from TimeSeriesForecast import logger
 from TimeSeriesForecast.pipeline.stage_01_data_ingestion import DataIngestionTrainingPipeline
+from TimeSeriesForecast.pipeline.stage_02_data_validation import DataValidationTrainingPipeline
+
 import ssl
 ssl._create_default_https_context = ssl._create_unverified_context
+
+
 STAGE_NAME= 'Data ingestion stage'
 try:
     logger.info(f'>>>>>> stage {STAGE_NAME} started <<<<<')
@@ -10,4 +14,13 @@ try:
     logger.info(f'>>>>>>>>> stage {STAGE_NAME} completed! <<<<<<')
 except Exception as e:
     logger.exception(e)
+    raise e
+
+STAGE_NAME= 'Data validation stage'
+try:
+    logger.info(f'>>>>>>> stage {STAGE_NAME} STARTED')
+    obj= DataValidationTrainingPipeline()
+    obj.main()
+    logger.info(f'>>>>>>>> stage {STAGE_NAME} COMPLETED')
+except Exception as e:
     raise e

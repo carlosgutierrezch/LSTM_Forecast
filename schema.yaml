@@ -1,1 +1,7 @@
-key: val
+COLUMNS:
+  Date: object
+  Close/Last: object
+  Volume: int64
+  Open: object
+  High: object
+  Low: object

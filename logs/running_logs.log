@@ -471,3 +471,59 @@ Source-Age: 0
 
 ]
 [2024-07-17 13:47:51,722:INFO:main:>>>>>>>>> stage Data ingestion stage completed! <<<<<<]
+[2024-07-18 01:45:57,737:INFO:common:yaml file: config/config.yaml loaded successfully]
+[2024-07-18 01:45:57,740:INFO:common:yaml file: params.yaml loaded successfully]
+[2024-07-18 01:45:57,741:INFO:common:yaml file: schema.yaml loaded successfully]
+[2024-07-18 01:45:57,741:INFO:common:created directory at: artifacts]
+[2024-07-18 01:49:13,246:INFO:common:yaml file: config/config.yaml loaded successfully]
+[2024-07-18 01:49:13,248:INFO:common:yaml file: params.yaml loaded successfully]
+[2024-07-18 01:49:13,249:INFO:common:yaml file: schema.yaml loaded successfully]
+[2024-07-18 01:49:13,251:INFO:common:created directory at: artifacts]
+[2024-07-18 01:49:13,252:INFO:common:created directory at: artifacts/data_validation]
+[2024-07-18 01:51:39,544:INFO:common:yaml file: config/config.yaml loaded successfully]
+[2024-07-18 01:51:39,546:INFO:common:yaml file: params.yaml loaded successfully]
+[2024-07-18 01:51:39,547:INFO:common:yaml file: schema.yaml loaded successfully]
+[2024-07-18 01:51:39,548:INFO:common:created directory at: artifacts]
+[2024-07-18 01:51:39,549:INFO:common:created directory at: artifacts/data_validation]
+[2024-07-18 01:52:03,579:INFO:common:yaml file: config/config.yaml loaded successfully]
+[2024-07-18 01:52:03,581:INFO:common:yaml file: params.yaml loaded successfully]
+[2024-07-18 01:52:03,583:INFO:common:yaml file: schema.yaml loaded successfully]
+[2024-07-18 01:52:03,584:INFO:common:created directory at: artifacts]
+[2024-07-18 01:52:03,585:INFO:common:created directory at: artifacts/data_ingestion]
+[2024-07-18 01:52:04,240:INFO:2757403511:artifacts/data_ingestion/data-forecast.zip download! with following info: 
+Connection: close
+Content-Length: 48759
+Cache-Control: max-age=300
+Content-Security-Policy: default-src 'none'; style-src 'unsafe-inline'; sandbox
+Content-Type: application/zip
+ETag: "b242fa9b06100c658c6c8e3096b0d4b17390be7861c1ab51cdf6a2a7d19cf86c"
+Strict-Transport-Security: max-age=31536000
+X-Content-Type-Options: nosniff
+X-Frame-Options: deny
+X-XSS-Protection: 1; mode=block
+X-GitHub-Request-Id: D046:4FDF4:1BFAA7B:1D52D5C:66985923
+Accept-Ranges: bytes
+Date: Wed, 17 Jul 2024 23:52:04 GMT
+Via: 1.1 varnish
+X-Served-By: cache-mad2200097-MAD
+X-Cache: MISS
+X-Cache-Hits: 0
+X-Timer: S1721260324.086128,VS0,VE190
+Vary: Authorization,Accept-Encoding,Origin
+Access-Control-Allow-Origin: *
+Cross-Origin-Resource-Policy: cross-origin
+X-Fastly-Request-ID: 76d7230446c5506be315f9bf4ac0792ab136a1bf
+Expires: Wed, 17 Jul 2024 23:57:04 GMT
+Source-Age: 0
+
+]
+[2024-07-18 18:19:22,614:INFO:common:yaml file: config/config.yaml loaded successfully]
+[2024-07-18 18:19:22,616:INFO:common:yaml file: params.yaml loaded successfully]
+[2024-07-18 18:19:22,618:INFO:common:yaml file: schema.yaml loaded successfully]
+[2024-07-18 18:19:22,618:INFO:common:created directory at: artifacts]
+[2024-07-18 18:19:22,642:INFO:common:created directory at: artifacts/data_validation]
+[2024-07-18 18:24:11,361:INFO:common:yaml file: config/config.yaml loaded successfully]
+[2024-07-18 18:24:11,363:INFO:common:yaml file: params.yaml loaded successfully]
+[2024-07-18 18:24:11,366:INFO:common:yaml file: schema.yaml loaded successfully]
+[2024-07-18 18:24:11,367:INFO:common:created directory at: artifacts]
+[2024-07-18 18:24:11,367:INFO:common:created directory at: artifacts/data_validation]
