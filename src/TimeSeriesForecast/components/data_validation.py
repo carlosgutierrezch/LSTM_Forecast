@@ -7,7 +7,7 @@ from TimeSeriesForecast.utils.common import read_yaml,create_directories
 from TimeSeriesForecast import logger
 from pathlib import Path
 from TimeSeriesForecast.entity.config_entity import DataValidationConfig
-
+import pandas as pd
 
 class DataValidation:
     def __init__(self,config: DataValidationConfig):
