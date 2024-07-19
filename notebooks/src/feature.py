@@ -29,7 +29,7 @@ class TimeConfig:
 
             if file_extension == '.csv':
                 df = pd.read_csv(path,sep=',',encoding='utf-8')
-            elif file_extension in ['.xlsx','xls']:
+            elif file_extension in ['.xlsx','.xls']:
                 df = pd.read_excel(path)
             elif file_extension == '.json':
                 df = pd.read_json(path)

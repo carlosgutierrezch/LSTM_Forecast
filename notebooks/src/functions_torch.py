@@ -5,10 +5,11 @@ import pandas as pd
 import numpy as np
 
 class  TransformLag:
-    """Series of transformation from DataFrame tu numpy with all their variances
+    """
+    Series of transformation from DataFrame tu numpy with all their variances
 
     Returns:
-        _type_: Different set of values fro pandas tu numpy
+        _type_: Different set of values from pandas tu numpy
     """
     @staticmethod
     def transform_df(df:pd.DataFrame,n_steps:int)->pd.DataFrame:
@@ -46,32 +47,15 @@ class  TransformLag:
         data_array= df.to_numpy()
         return data_array
 
+  
     @staticmethod
-    def lag_transform(df:pd.DataFrame,n_steps:int)->np.ndarray:
-        """
-        Pipe of process  transform_df and lag_numpy
+    def lag_transform(df:pd.DataFrame,n_steps:int)->pd.DataFrame:
 
-        Args:
-            df (pd.DataFrame): Pandas DataFrame
-            n_steps (int): Number of lags
+        for i in range(1,n_steps+1):
+            df[f'Value (t-{i})']= df.iloc[:,0].shift(i)
 
-        Returns:
-            np.ndarray: Matrix of numbers
-        """
-        def transform_df(df:pd.DataFrame,n_steps:int)->pd.DataFrame:
-
-            for i in range(1,n_steps+1):
-                df[f'Value (t-{i})']= df.iloc[:,0].shift(i)
-
-            df.dropna(inplace=True)
-            return df
-
-        def lag_numpy(df:pd.DataFrame)-> np.ndarray:
-            df=df.asfreq('D')
-            df.ffill(inplace=True)
-            data_array= df.to_numpy()
-            return data_array
-        first_step= transform_df(df,n_steps)
-        second_step= lag_numpy(first_step)
-
-        return second_step
+        df.dropna(inplace=True)
+        df=df.asfreq('D')
+        df.ffill(inplace=True)
+        data_array= df.to_numpy()
+        return data_array
