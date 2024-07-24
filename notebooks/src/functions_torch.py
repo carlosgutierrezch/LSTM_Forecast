@@ -57,5 +57,5 @@ class  TransformLag:
         df.dropna(inplace=True)
         df=df.asfreq('D')
         df.ffill(inplace=True)
-        data_array= df.to_numpy()
-        return data_array
+        # data_array= df.to_numpy()
+        return df
