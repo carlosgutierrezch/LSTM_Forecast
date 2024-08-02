@@ -2,6 +2,7 @@ from TimeSeriesForecast import logger
 from TimeSeriesForecast.pipeline.stage_01_data_ingestion import DataIngestionTrainingPipeline
 from TimeSeriesForecast.pipeline.stage_02_data_validation import DataValidationTrainingPipeline
 from TimeSeriesForecast.pipeline.stage_03_data_cleaning import DataCleaningTrainingPipeline
+from TimeSeriesForecast.pipeline.stage_04_data_preparation import DataPreparationTrainingPipeline
 import ssl
 ssl._create_default_https_context = ssl._create_unverified_context
 
@@ -31,5 +32,14 @@ try:
     obj= DataCleaningTrainingPipeline()
     obj.main()
     logger.info('>>>>>>>> stage {STAGE_NAME} COMPLETED')
+except Exception as e:
+    raise e
+
+STAGE_NAME= 'Data preparation stage'
+try:
+    logger.info(f'>>>>>>>>>> {STAGE_NAME} STARTED')
+    obj= DataPreparationTrainingPipeline()
+    obj.main()
+    logger.info(f'>>>>>>>>>> {STAGE_NAME} FINISHED')
 except Exception as e:
     raise e

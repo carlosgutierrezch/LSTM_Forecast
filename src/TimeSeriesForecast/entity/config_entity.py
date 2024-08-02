@@ -28,7 +28,16 @@ class DataValidationConfig:
 @dataclass(frozen=True)
 class DataCleaningConfig:
     """
-    Entity for data transformation
+    Entity for data cleaning
     """
     root_dir: Path
     data_path: Path
+    
+@dataclass(frozen=True)
+class DataPreparationConfig:
+    """
+    Entitty for data preparation
+    """
+    root_dir: Path
+    data_path: Path
+    save_path: Path

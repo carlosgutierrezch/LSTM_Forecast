@@ -7,7 +7,7 @@ from TimeSeriesForecast.utils.common import read_yaml,create_directories
 from TimeSeriesForecast.entity.config_entity import DataIngestionConfig
 from TimeSeriesForecast.entity.config_entity import DataValidationConfig
 from TimeSeriesForecast.entity.config_entity import DataCleaningConfig
-
+from TimeSeriesForecast.entity.config_entity import DataPreparationConfig
 class ConfigurationManager:
     """
     Data class that receives paths and the DataIngestionConfig function to 
@@ -62,3 +62,15 @@ class ConfigurationManager:
                                                 data_path= config.data_path
                                                 )
         return data_cleaning_config
+    
+    def get_data_preparation_config(self)->DataPreparationConfig:
+        config= self.config.data_preparation
+
+        create_directories([config.root_dir])
+
+        data_preparation_config= DataPreparationConfig(
+                                                        root_dir= config.root_dir,
+                                                        data_path= config.data_path,
+                                                        save_path= config.save_path
+                                                        )
+        return data_preparation_config

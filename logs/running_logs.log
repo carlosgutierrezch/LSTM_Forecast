@@ -1514,3 +1514,62 @@ Source-Age: 0
 [2024-08-02 22:49:47,204:INFO:common:created directory at: artifacts/data_preparation]
 [2024-08-02 22:49:47,206:INFO:3293646955:Transform and split done!]
 [2024-08-02 22:49:47,208:INFO:3293646955:Tensors succesfully saved in: artifacts/data_preparation/tensors.pt]
+[2024-08-02 23:57:53,233:INFO:main:>>>>>> stage Data ingestion stage started <<<<<]
+[2024-08-02 23:57:53,234:INFO:common:yaml file: config/config.yaml loaded successfully]
+[2024-08-02 23:57:53,236:INFO:common:yaml file: params.yaml loaded successfully]
+[2024-08-02 23:57:53,237:INFO:common:yaml file: schema.yaml loaded successfully]
+[2024-08-02 23:57:53,237:INFO:common:created directory at: artifacts]
+[2024-08-02 23:57:53,237:INFO:common:created directory at: artifacts/data_ingestion]
+[2024-08-02 23:57:54,108:INFO:data_ingestion:artifacts/data_ingestion/data-forecast.zip download! with following info: 
+Connection: close
+Content-Length: 48759
+Cache-Control: max-age=300
+Content-Security-Policy: default-src 'none'; style-src 'unsafe-inline'; sandbox
+Content-Type: application/zip
+ETag: "b242fa9b06100c658c6c8e3096b0d4b17390be7861c1ab51cdf6a2a7d19cf86c"
+Strict-Transport-Security: max-age=31536000
+X-Content-Type-Options: nosniff
+X-Frame-Options: deny
+X-XSS-Protection: 1; mode=block
+X-GitHub-Request-Id: 8434:1607A9:34898B:36C023:66AD5661
+Accept-Ranges: bytes
+Date: Fri, 02 Aug 2024 21:57:54 GMT
+Via: 1.1 varnish
+X-Served-By: cache-mad22039-MAD
+X-Cache: MISS
+X-Cache-Hits: 0
+X-Timer: S1722635874.006613,VS0,VE164
+Vary: Authorization,Accept-Encoding,Origin
+Access-Control-Allow-Origin: *
+Cross-Origin-Resource-Policy: cross-origin
+X-Fastly-Request-ID: eeb269da25978756468f719f87d018fc33d24663
+Expires: Fri, 02 Aug 2024 22:02:54 GMT
+Source-Age: 0
+
+]
+[2024-08-02 23:57:54,113:INFO:main:>>>>>>>>> stage Data ingestion stage completed! <<<<<<]
+[2024-08-02 23:57:54,113:INFO:main:>>>>>>> stage Data validation stage STARTED]
+[2024-08-02 23:57:54,115:INFO:common:yaml file: config/config.yaml loaded successfully]
+[2024-08-02 23:57:54,116:INFO:common:yaml file: params.yaml loaded successfully]
+[2024-08-02 23:57:54,117:INFO:common:yaml file: schema.yaml loaded successfully]
+[2024-08-02 23:57:54,117:INFO:common:created directory at: artifacts]
+[2024-08-02 23:57:54,118:INFO:common:created directory at: artifacts/data_validation]
+[2024-08-02 23:57:54,132:INFO:main:>>>>>>>> stage Data validation stage COMPLETED]
+[2024-08-02 23:57:54,132:INFO:main:>>>>>>> Data Cleaning stage STARTED]
+[2024-08-02 23:57:54,133:INFO:common:yaml file: config/config.yaml loaded successfully]
+[2024-08-02 23:57:54,134:INFO:common:yaml file: params.yaml loaded successfully]
+[2024-08-02 23:57:54,135:INFO:common:yaml file: schema.yaml loaded successfully]
+[2024-08-02 23:57:54,135:INFO:common:created directory at: artifacts]
+[2024-08-02 23:57:54,135:INFO:common:created directory at: artifacts/data_cleaning]
+[2024-08-02 23:57:54,172:INFO:data_cleaning:Train and test data prepared and saved.]
+[2024-08-02 23:57:54,172:INFO:data_cleaning:Data shape after transformation: (346, 11)]
+[2024-08-02 23:57:54,172:INFO:main:>>>>>>>> stage {STAGE_NAME} COMPLETED]
+[2024-08-02 23:57:54,173:INFO:main:>>>>>>>>>> Data preparation stage STARTED]
+[2024-08-02 23:57:54,173:INFO:common:yaml file: config/config.yaml loaded successfully]
+[2024-08-02 23:57:54,174:INFO:common:yaml file: params.yaml loaded successfully]
+[2024-08-02 23:57:54,174:INFO:common:yaml file: schema.yaml loaded successfully]
+[2024-08-02 23:57:54,174:INFO:common:created directory at: artifacts]
+[2024-08-02 23:57:54,174:INFO:common:created directory at: artifacts/data_preparation]
+[2024-08-02 23:57:54,176:INFO:data_preparation:Transform and split done!]
+[2024-08-02 23:57:54,185:INFO:data_preparation:Tensors succesfully saved in: artifacts/data_preparation/tensors.pt]
+[2024-08-02 23:57:54,186:INFO:main:>>>>>>>>>> Data preparation stage FINISHED]
