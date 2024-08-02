@@ -6,7 +6,7 @@ from TimeSeriesForecast.constants import *
 from TimeSeriesForecast.utils.common import read_yaml,create_directories
 from TimeSeriesForecast.entity.config_entity import DataIngestionConfig
 from TimeSeriesForecast.entity.config_entity import DataValidationConfig
-from TimeSeriesForecast.entity.config_entity import DataTransformationConfig
+from TimeSeriesForecast.entity.config_entity import DataCleaningConfig
 
 class ConfigurationManager:
     """
@@ -30,11 +30,11 @@ class ConfigurationManager:
         create_directories([config.root_dir])
 
         data_ingestion_config= DataIngestionConfig(
-                                                        root_dir=config.root_dir,
-                                                        source_URL= config.source_URL,
-                                                        local_data_file= config.local_data_file,
-                                                        unzip_dir= config.unzip_dir
-                                                        )
+                                                    root_dir=config.root_dir,
+                                                    source_URL= config.source_URL,
+                                                    local_data_file= config.local_data_file,
+                                                    unzip_dir= config.unzip_dir
+                                                    )
         return data_ingestion_config
     
     def get_data_validation_config(self)-> DataValidationConfig:
@@ -44,21 +44,21 @@ class ConfigurationManager:
         create_directories([config.root_dir])
         
         data_validation_config= DataValidationConfig(
-            root_dir=  config.root_dir,
-            STATUS_FILE= config.STATUS_FILE,
-            unzip_data_dir= config.unzip_data_dir,
-            all_schema= schema
-        )
+                                                    root_dir=  config.root_dir,
+                                                    STATUS_FILE= config.STATUS_FILE,
+                                                    unzip_data_dir= config.unzip_data_dir,
+                                                    all_schema= schema
+                                                    )
         
         return data_validation_config
     
-    def get_data_transformation_config(self)-> DataTransformationConfig:
-        config= self.config.data_transformation
+    def get_data_cleaning_config(self)-> DataCleaningConfig:
+        config= self.config.data_cleaning
         
         create_directories([config.root_dir])
 
-        data_transformation_config= DataTransformationConfig(
-            root_dir= config.root_dir,
-            data_path= config.data_path,
-        )
-        return data_transformation_config
+        data_cleaning_config= DataCleaningConfig(
+                                                root_dir= config.root_dir,
+                                                data_path= config.data_path
+                                                )
+        return data_cleaning_config

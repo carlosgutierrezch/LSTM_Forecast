@@ -26,7 +26,7 @@ class DataValidationConfig:
     all_schema: dict
     
 @dataclass(frozen=True)
-class DataTransformationConfig:
+class DataCleaningConfig:
     """
     Entity for data transformation
     """
