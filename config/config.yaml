@@ -19,3 +19,8 @@ data_preparation:
   root_dir: artifacts/data_preparation
   data_path: artifacts/data_cleaning/data.csv
   save_path: artifacts/data_preparation/tensors.pt
+
+model_trainer:
+  root_dir: artifacts/model_trainer
+  data_path: artifacts/data_preparation/tensors.pt
+  save_path: artifacts/model_trainer/model.pt
