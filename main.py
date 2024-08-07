@@ -3,6 +3,8 @@ from TimeSeriesForecast.pipeline.stage_01_data_ingestion import DataIngestionTra
 from TimeSeriesForecast.pipeline.stage_02_data_validation import DataValidationTrainingPipeline
 from TimeSeriesForecast.pipeline.stage_03_data_cleaning import DataCleaningTrainingPipeline
 from TimeSeriesForecast.pipeline.stage_04_data_preparation import DataPreparationTrainingPipeline
+from TimeSeriesForecast.pipeline.stage_05_data_pipeline import ModelTrainingPipeline
+from TimeSeriesForecast.pipeline.stage_06_data_evaluation import ModelEvaluationPipeline
 import ssl
 ssl._create_default_https_context = ssl._create_unverified_context
 
@@ -43,3 +45,21 @@ try:
     logger.info(f'>>>>>>>>>> {STAGE_NAME} FINISHED')
 except Exception as e:
     raise e
+
+STAGE_NAME= 'Model training stage'
+try:
+    logger.info(f'>>>>>>>>>> {STAGE_NAME} STARTED')
+    obj= ModelTrainingPipeline()
+    obj.main()
+    logger.info(f'>>>>>>>>>> {STAGE_NAME} FINISHED')
+except Exception as e:
+    raise e
+
+STAGE_NAME= 'Data evaluation stage'
+try:
+    logger.info(f'>>>>>>>>>> {STAGE_NAME} STARTED')
+    obj= ModelEvaluationPipeline()
+    obj.main()
+    logger.info(f'>>>>>>>>>> {STAGE_NAME} FINISHED')
+except Exception as e:
+    raise e 

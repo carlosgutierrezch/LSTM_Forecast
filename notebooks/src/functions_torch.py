@@ -7,6 +7,8 @@ from torch.utils.data import Dataset
 from torch.utils.data import DataLoader
 import torch
 import torch.nn as nn
+from sklearn.metrics import mean_squared_error, mean_absolute_error, r2_score
+
 
 class  TransformLag:
     """
@@ -81,17 +83,20 @@ def set_seed(seed):
     np.random.seed(seed)
     
 class LSTM(nn.Module):
+
     def __init__(self,input_size,hidden_size,num_stacked_layers):
         super().__init__()
         self.hidden_size= hidden_size
         self.num_stacked_layers= num_stacked_layers
         
         self.lstm= nn.LSTM(input_size,hidden_size,num_stacked_layers,
-                           batch_first=True)
+                           batch_first=True,dropout= 0.05)
         self.fc= nn.Linear(hidden_size,1)
         
     def forward(self,x):
         batch_size= x.size(0)
+        device = 'cuda:0' if torch.cuda.is_available() else 'cpu'
+
         h0= torch.zeros(self.num_stacked_layers,batch_size,self.hidden_size).to(device)
         c0= torch.zeros(self.num_stacked_layers,batch_size,self.hidden_size).to(device)
         
@@ -103,3 +108,9 @@ def set_seed(seed):
     torch.manual_seed(seed)
     torch.cuda.manual_seed(seed)
     np.random.seed(seed)
+    
+def eval_metrics(actual, pred):
+    rmse = np.sqrt(mean_squared_error(actual, pred))
+    mae = mean_absolute_error(actual, pred)
+    r2 = r2_score(actual, pred)
+    return rmse, mae, r2

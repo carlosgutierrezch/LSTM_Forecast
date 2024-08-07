@@ -41,14 +41,14 @@ class DataCleaning:
     def filter_data(self):
         try:
             self.df = self.df[['Value']]
-            self.df = self.df.loc['2023':'2023'].copy()
+            self.df = self.df.loc['2021':'2023'].copy()
             return self
         except Exception as e:
             raise Exception(f"Error in filter_data: {str(e)}")
 
     def transform_data(self):
         try:
-            for i in range(1, 10 + 1):
+            for i in range(1, 1 + 1):
                 self.df[f'Value (t-{i})'] = self.df['Value'].shift(i)
             self.df.dropna(inplace=True)
             self.df = self.df.asfreq('D')

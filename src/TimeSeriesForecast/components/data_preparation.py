@@ -40,10 +40,11 @@ class DataPreparation:
             raise Exception(f'Problem Scaling the data: {e}')
     def transform_split_data(self):
         try:
+            X=np.flip(X,axis=1)
             X= self.transformed[:,1:]
             y= self.transformed[:,0]
             X= dc(np.flip(X,axis=1))
-            split_index= int(len(X)*0.90)
+            split_index= int(len(X)*0.80)
             self.X_train= X[:split_index]
             self.X_test= X[split_index:]
             self.y_train= y[:split_index]
@@ -54,8 +55,8 @@ class DataPreparation:
             raise Exception(f'Problem transforming and splitting the data: {e}')
     def reshaping_data(self):
         try:
-            self.X_train= self.X_train.reshape((-1,10,1))
-            self.X_test= self.X_test.reshape((-1,10,1))
+            self.X_train= self.X_train.reshape((-1,1,1))
+            self.X_test= self.X_test.reshape((-1,1,1))
             self.y_train= self.y_train.reshape((-1,1))
             self.y_test= self.y_test.reshape((-1,1))
             self.X_train= torch.tensor(self.X_train).float()

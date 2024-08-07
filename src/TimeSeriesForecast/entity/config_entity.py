@@ -41,3 +41,37 @@ class DataPreparationConfig:
     root_dir: Path
     data_path: Path
     save_path: Path
+    
+@dataclass(frozen=True)
+class ModelTrainerConfig:
+    """
+    Entity for training the model
+    """
+    root_dir: Path
+    data_path: Path
+    save_path: Path
+    model_name: Path
+    n_steps: int
+    split_ratio: float
+    seed: int
+    drop_out_rate: float
+    input_size: int
+    hidden_size: int
+    num_stacked_layers: int
+    learning_rate: float
+    num_epochs: int
+    batch_size: int
+
+@dataclass(frozen=True)
+class ModelEvaluationConfig:
+    """
+    Entity for Model Evaluation
+    """
+    root_dir: Path
+    test_data_path: Path
+    model_path: Path
+    metric_file_name: str
+    mlflow_url: str
+    batch_size: int
+    num_epochs: int
+    all_params: Path
