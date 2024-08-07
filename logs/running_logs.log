@@ -2125,3 +2125,705 @@ Source-Age: 0
 [2024-08-07 11:29:12,250:INFO:common:yaml file: params.yaml loaded successfully]
 [2024-08-07 11:29:12,266:INFO:common:yaml file: schema.yaml loaded successfully]
 [2024-08-07 11:29:12,272:INFO:common:created directory at: artifacts]
+[2024-08-07 11:56:20,560:INFO:main:>>>>>> stage Data ingestion stage started <<<<<]
+[2024-08-07 11:56:20,561:INFO:common:yaml file: config/config.yaml loaded successfully]
+[2024-08-07 11:56:20,563:INFO:common:yaml file: params.yaml loaded successfully]
+[2024-08-07 11:56:20,564:INFO:common:yaml file: schema.yaml loaded successfully]
+[2024-08-07 11:56:20,564:INFO:common:created directory at: artifacts]
+[2024-08-07 11:56:20,564:INFO:common:created directory at: artifacts/data_ingestion]
+[2024-08-07 11:56:21,544:INFO:data_ingestion:artifacts/data_ingestion/data-forecast.zip download! with following info: 
+Connection: close
+Content-Length: 48759
+Cache-Control: max-age=300
+Content-Security-Policy: default-src 'none'; style-src 'unsafe-inline'; sandbox
+Content-Type: application/zip
+ETag: "b242fa9b06100c658c6c8e3096b0d4b17390be7861c1ab51cdf6a2a7d19cf86c"
+Strict-Transport-Security: max-age=31536000
+X-Content-Type-Options: nosniff
+X-Frame-Options: deny
+X-XSS-Protection: 1; mode=block
+X-GitHub-Request-Id: 3322:344C9E:1192573:126D232:66B344C5
+Accept-Ranges: bytes
+Date: Wed, 07 Aug 2024 09:56:21 GMT
+Via: 1.1 varnish
+X-Served-By: cache-mad2200118-MAD
+X-Cache: MISS
+X-Cache-Hits: 0
+X-Timer: S1723024581.322638,VS0,VE227
+Vary: Authorization,Accept-Encoding,Origin
+Access-Control-Allow-Origin: *
+Cross-Origin-Resource-Policy: cross-origin
+X-Fastly-Request-ID: 5ebebba44ed1b40529debdff9cb576f22c2588d3
+Expires: Wed, 07 Aug 2024 10:01:21 GMT
+Source-Age: 0
+
+]
+[2024-08-07 11:56:21,548:INFO:main:>>>>>>>>> stage Data ingestion stage completed! <<<<<<]
+[2024-08-07 11:56:21,548:INFO:main:>>>>>>> stage Data validation stage STARTED]
+[2024-08-07 11:56:21,552:INFO:common:yaml file: config/config.yaml loaded successfully]
+[2024-08-07 11:56:21,553:INFO:common:yaml file: params.yaml loaded successfully]
+[2024-08-07 11:56:21,554:INFO:common:yaml file: schema.yaml loaded successfully]
+[2024-08-07 11:56:21,554:INFO:common:created directory at: artifacts]
+[2024-08-07 11:56:21,555:INFO:common:created directory at: artifacts/data_validation]
+[2024-08-07 11:56:21,569:INFO:main:>>>>>>>> stage Data validation stage COMPLETED]
+[2024-08-07 11:56:21,569:INFO:main:>>>>>>> Data Cleaning stage STARTED]
+[2024-08-07 11:56:21,572:INFO:common:yaml file: config/config.yaml loaded successfully]
+[2024-08-07 11:56:21,573:INFO:common:yaml file: params.yaml loaded successfully]
+[2024-08-07 11:56:21,574:INFO:common:yaml file: schema.yaml loaded successfully]
+[2024-08-07 11:56:21,574:INFO:common:created directory at: artifacts]
+[2024-08-07 11:56:21,574:INFO:common:created directory at: artifacts/data_cleaning]
+[2024-08-07 11:56:21,608:INFO:data_cleaning:Train and test data prepared and saved.]
+[2024-08-07 11:56:21,608:INFO:data_cleaning:Data shape after transformation: (1089, 2)]
+[2024-08-07 11:56:21,608:INFO:main:>>>>>>>> stage {STAGE_NAME} COMPLETED]
+[2024-08-07 11:56:21,608:INFO:main:>>>>>>>>>> Data preparation stage STARTED]
+[2024-08-07 11:56:21,610:INFO:common:yaml file: config/config.yaml loaded successfully]
+[2024-08-07 11:56:21,610:INFO:common:yaml file: params.yaml loaded successfully]
+[2024-08-07 11:56:21,611:INFO:common:yaml file: schema.yaml loaded successfully]
+[2024-08-07 11:56:21,611:INFO:common:created directory at: artifacts]
+[2024-08-07 11:56:21,611:INFO:common:created directory at: artifacts/data_preparation]
+[2024-08-07 11:57:11,056:INFO:main:>>>>>> stage Data ingestion stage started <<<<<]
+[2024-08-07 11:57:11,057:INFO:common:yaml file: config/config.yaml loaded successfully]
+[2024-08-07 11:57:11,059:INFO:common:yaml file: params.yaml loaded successfully]
+[2024-08-07 11:57:11,060:INFO:common:yaml file: schema.yaml loaded successfully]
+[2024-08-07 11:57:11,060:INFO:common:created directory at: artifacts]
+[2024-08-07 11:57:11,060:INFO:common:created directory at: artifacts/data_ingestion]
+[2024-08-07 11:57:11,423:INFO:data_ingestion:artifacts/data_ingestion/data-forecast.zip download! with following info: 
+Connection: close
+Content-Length: 48759
+Cache-Control: max-age=300
+Content-Security-Policy: default-src 'none'; style-src 'unsafe-inline'; sandbox
+Content-Type: application/zip
+ETag: "b242fa9b06100c658c6c8e3096b0d4b17390be7861c1ab51cdf6a2a7d19cf86c"
+Strict-Transport-Security: max-age=31536000
+X-Content-Type-Options: nosniff
+X-Frame-Options: deny
+X-XSS-Protection: 1; mode=block
+X-GitHub-Request-Id: 3322:344C9E:1192573:126D232:66B344C5
+Accept-Ranges: bytes
+Date: Wed, 07 Aug 2024 09:57:11 GMT
+Via: 1.1 varnish
+X-Served-By: cache-mad22066-MAD
+X-Cache: HIT
+X-Cache-Hits: 1
+X-Timer: S1723024631.451230,VS0,VE1
+Vary: Authorization,Accept-Encoding,Origin
+Access-Control-Allow-Origin: *
+Cross-Origin-Resource-Policy: cross-origin
+X-Fastly-Request-ID: dc000fe6a0dcf333d5a53707a1c2604b8567fdc2
+Expires: Wed, 07 Aug 2024 10:02:11 GMT
+Source-Age: 50
+
+]
+[2024-08-07 11:57:11,426:INFO:main:>>>>>>>>> stage Data ingestion stage completed! <<<<<<]
+[2024-08-07 11:57:11,426:INFO:main:>>>>>>> stage Data validation stage STARTED]
+[2024-08-07 11:57:11,430:INFO:common:yaml file: config/config.yaml loaded successfully]
+[2024-08-07 11:57:11,431:INFO:common:yaml file: params.yaml loaded successfully]
+[2024-08-07 11:57:11,432:INFO:common:yaml file: schema.yaml loaded successfully]
+[2024-08-07 11:57:11,433:INFO:common:created directory at: artifacts]
+[2024-08-07 11:57:11,433:INFO:common:created directory at: artifacts/data_validation]
+[2024-08-07 11:57:11,450:INFO:main:>>>>>>>> stage Data validation stage COMPLETED]
+[2024-08-07 11:57:11,451:INFO:main:>>>>>>> Data Cleaning stage STARTED]
+[2024-08-07 11:57:11,453:INFO:common:yaml file: config/config.yaml loaded successfully]
+[2024-08-07 11:57:11,454:INFO:common:yaml file: params.yaml loaded successfully]
+[2024-08-07 11:57:11,455:INFO:common:yaml file: schema.yaml loaded successfully]
+[2024-08-07 11:57:11,455:INFO:common:created directory at: artifacts]
+[2024-08-07 11:57:11,455:INFO:common:created directory at: artifacts/data_cleaning]
+[2024-08-07 11:57:11,487:INFO:data_cleaning:Train and test data prepared and saved.]
+[2024-08-07 11:57:11,487:INFO:data_cleaning:Data shape after transformation: (1089, 2)]
+[2024-08-07 11:57:11,487:INFO:main:>>>>>>>> stage {STAGE_NAME} COMPLETED]
+[2024-08-07 11:57:11,487:INFO:main:>>>>>>>>>> Data preparation stage STARTED]
+[2024-08-07 11:57:11,489:INFO:common:yaml file: config/config.yaml loaded successfully]
+[2024-08-07 11:57:11,489:INFO:common:yaml file: params.yaml loaded successfully]
+[2024-08-07 11:57:11,490:INFO:common:yaml file: schema.yaml loaded successfully]
+[2024-08-07 11:57:11,490:INFO:common:created directory at: artifacts]
+[2024-08-07 11:57:11,490:INFO:common:created directory at: artifacts/data_preparation]
+[2024-08-07 11:57:11,491:INFO:data_preparation:Transform and split done!]
+[2024-08-07 11:57:11,501:INFO:data_preparation:Tensors succesfully saved in: artifacts/data_preparation/tensors.pt]
+[2024-08-07 11:57:11,501:INFO:main:>>>>>>>>>> Data preparation stage FINISHED]
+[2024-08-07 11:57:11,501:INFO:main:>>>>>>>>>> Model training stage STARTED]
+[2024-08-07 11:57:11,502:INFO:common:yaml file: config/config.yaml loaded successfully]
+[2024-08-07 11:57:11,503:INFO:common:yaml file: params.yaml loaded successfully]
+[2024-08-07 11:57:11,503:INFO:common:yaml file: schema.yaml loaded successfully]
+[2024-08-07 11:57:11,503:INFO:common:created directory at: artifacts]
+[2024-08-07 11:57:11,503:INFO:common:created directory at: artifacts/model_trainer]
+[2024-08-07 11:57:12,059:INFO:model_trainer:Train loss from Torch Model0.1992187452163886]
+[2024-08-07 11:57:12,119:INFO:model_trainer:Train loss from Torch Model0.13584739416414363]
+[2024-08-07 11:57:12,178:INFO:model_trainer:Train loss from Torch Model0.10072631147605451]
+[2024-08-07 11:57:12,237:INFO:model_trainer:Train loss from Torch Model0.06948442103616385]
+[2024-08-07 11:57:12,297:INFO:model_trainer:Train loss from Torch Model0.04388478030027314]
+[2024-08-07 11:57:12,356:INFO:model_trainer:Train loss from Torch Model0.02234303987841651]
+[2024-08-07 11:57:12,414:INFO:model_trainer:Train loss from Torch Model0.011270751882958311]
+[2024-08-07 11:57:12,472:INFO:model_trainer:Train loss from Torch Model0.006724874752850693]
+[2024-08-07 11:57:12,534:INFO:model_trainer:Train loss from Torch Model0.005594968679361045]
+[2024-08-07 11:57:12,594:INFO:model_trainer:Train loss from Torch Model0.005322136733659797]
+[2024-08-07 11:57:12,595:INFO:main:>>>>>>>>>> Model training stage FINISHED]
+[2024-08-07 11:57:12,595:INFO:main:>>>>>>>>>> Data evaluation stage STARTED]
+[2024-08-07 11:57:12,596:INFO:common:yaml file: config/config.yaml loaded successfully]
+[2024-08-07 11:57:12,596:INFO:common:yaml file: params.yaml loaded successfully]
+[2024-08-07 11:57:12,597:INFO:common:yaml file: schema.yaml loaded successfully]
+[2024-08-07 11:57:12,597:INFO:common:created directory at: artifacts]
+[2024-08-07 11:57:12,945:INFO:main:>>>>>>>>>> Data evaluation stage FINISHED]
+[2024-08-07 11:58:10,362:INFO:main:>>>>>> stage Data ingestion stage started <<<<<]
+[2024-08-07 11:58:10,364:INFO:common:yaml file: config/config.yaml loaded successfully]
+[2024-08-07 11:58:10,366:INFO:common:yaml file: params.yaml loaded successfully]
+[2024-08-07 11:58:10,367:INFO:common:yaml file: schema.yaml loaded successfully]
+[2024-08-07 11:58:10,367:INFO:common:created directory at: artifacts]
+[2024-08-07 11:58:10,367:INFO:common:created directory at: artifacts/data_ingestion]
+[2024-08-07 11:58:10,819:INFO:data_ingestion:artifacts/data_ingestion/data-forecast.zip download! with following info: 
+Connection: close
+Content-Length: 48759
+Cache-Control: max-age=300
+Content-Security-Policy: default-src 'none'; style-src 'unsafe-inline'; sandbox
+Content-Type: application/zip
+ETag: "b242fa9b06100c658c6c8e3096b0d4b17390be7861c1ab51cdf6a2a7d19cf86c"
+Strict-Transport-Security: max-age=31536000
+X-Content-Type-Options: nosniff
+X-Frame-Options: deny
+X-XSS-Protection: 1; mode=block
+X-GitHub-Request-Id: 3322:344C9E:1192573:126D232:66B344C5
+Accept-Ranges: bytes
+Date: Wed, 07 Aug 2024 09:58:10 GMT
+Via: 1.1 varnish
+X-Served-By: cache-mad22026-MAD
+X-Cache: HIT
+X-Cache-Hits: 1
+X-Timer: S1723024691.824036,VS0,VE1
+Vary: Authorization,Accept-Encoding,Origin
+Access-Control-Allow-Origin: *
+Cross-Origin-Resource-Policy: cross-origin
+X-Fastly-Request-ID: ffb6298df1dee7113612b24dd3713ce085e41d47
+Expires: Wed, 07 Aug 2024 10:03:10 GMT
+Source-Age: 109
+
+]
+[2024-08-07 11:58:10,824:INFO:main:>>>>>>>>> stage Data ingestion stage completed! <<<<<<]
+[2024-08-07 11:58:10,825:INFO:main:>>>>>>> stage Data validation stage STARTED]
+[2024-08-07 11:58:10,828:INFO:common:yaml file: config/config.yaml loaded successfully]
+[2024-08-07 11:58:10,829:INFO:common:yaml file: params.yaml loaded successfully]
+[2024-08-07 11:58:10,830:INFO:common:yaml file: schema.yaml loaded successfully]
+[2024-08-07 11:58:10,830:INFO:common:created directory at: artifacts]
+[2024-08-07 11:58:10,831:INFO:common:created directory at: artifacts/data_validation]
+[2024-08-07 11:58:10,844:INFO:main:>>>>>>>> stage Data validation stage COMPLETED]
+[2024-08-07 11:58:10,844:INFO:main:>>>>>>> Data Cleaning stage STARTED]
+[2024-08-07 11:58:10,847:INFO:common:yaml file: config/config.yaml loaded successfully]
+[2024-08-07 11:58:10,848:INFO:common:yaml file: params.yaml loaded successfully]
+[2024-08-07 11:58:10,849:INFO:common:yaml file: schema.yaml loaded successfully]
+[2024-08-07 11:58:10,849:INFO:common:created directory at: artifacts]
+[2024-08-07 11:58:10,849:INFO:common:created directory at: artifacts/data_cleaning]
+[2024-08-07 11:58:10,883:INFO:data_cleaning:Train and test data prepared and saved.]
+[2024-08-07 11:58:10,883:INFO:data_cleaning:Data shape after transformation: (1089, 2)]
+[2024-08-07 11:58:10,883:INFO:main:>>>>>>>> stage {STAGE_NAME} COMPLETED]
+[2024-08-07 11:58:10,883:INFO:main:>>>>>>>>>> Data preparation stage STARTED]
+[2024-08-07 11:58:10,885:INFO:common:yaml file: config/config.yaml loaded successfully]
+[2024-08-07 11:58:10,885:INFO:common:yaml file: params.yaml loaded successfully]
+[2024-08-07 11:58:10,886:INFO:common:yaml file: schema.yaml loaded successfully]
+[2024-08-07 11:58:10,886:INFO:common:created directory at: artifacts]
+[2024-08-07 11:58:10,886:INFO:common:created directory at: artifacts/data_preparation]
+[2024-08-07 11:58:10,887:INFO:data_preparation:Transform and split done!]
+[2024-08-07 11:58:10,896:INFO:data_preparation:Tensors succesfully saved in: artifacts/data_preparation/tensors.pt]
+[2024-08-07 11:58:10,896:INFO:main:>>>>>>>>>> Data preparation stage FINISHED]
+[2024-08-07 11:58:10,896:INFO:main:>>>>>>>>>> Model training stage STARTED]
+[2024-08-07 11:58:10,897:INFO:common:yaml file: config/config.yaml loaded successfully]
+[2024-08-07 11:58:10,898:INFO:common:yaml file: params.yaml loaded successfully]
+[2024-08-07 11:58:10,898:INFO:common:yaml file: schema.yaml loaded successfully]
+[2024-08-07 11:58:10,898:INFO:common:created directory at: artifacts]
+[2024-08-07 11:58:10,899:INFO:common:created directory at: artifacts/model_trainer]
+[2024-08-07 11:58:11,422:INFO:model_trainer:Train loss from Torch Model0.06738707761153571]
+[2024-08-07 11:58:11,481:INFO:model_trainer:Train loss from Torch Model0.005581724282530393]
+[2024-08-07 11:58:11,540:INFO:model_trainer:Train loss from Torch Model0.005542775873064701]
+[2024-08-07 11:58:11,599:INFO:model_trainer:Train loss from Torch Model0.005396513777668588]
+[2024-08-07 11:58:11,658:INFO:model_trainer:Train loss from Torch Model0.005408079500987448]
+[2024-08-07 11:58:11,718:INFO:model_trainer:Train loss from Torch Model0.005281214682079074]
+[2024-08-07 11:58:11,776:INFO:model_trainer:Train loss from Torch Model0.0052990742589868614]
+[2024-08-07 11:58:11,836:INFO:model_trainer:Train loss from Torch Model0.005471820487648735]
+[2024-08-07 11:58:11,899:INFO:model_trainer:Train loss from Torch Model0.005527645543307616]
+[2024-08-07 11:58:11,958:INFO:model_trainer:Train loss from Torch Model0.005207065449212678]
+[2024-08-07 11:58:11,958:INFO:main:>>>>>>>>>> Model training stage FINISHED]
+[2024-08-07 11:58:11,958:INFO:main:>>>>>>>>>> Data evaluation stage STARTED]
+[2024-08-07 11:58:11,959:INFO:common:yaml file: config/config.yaml loaded successfully]
+[2024-08-07 11:58:11,960:INFO:common:yaml file: params.yaml loaded successfully]
+[2024-08-07 11:58:11,960:INFO:common:yaml file: schema.yaml loaded successfully]
+[2024-08-07 11:58:11,960:INFO:common:created directory at: artifacts]
+[2024-08-07 11:58:12,255:INFO:main:>>>>>>>>>> Data evaluation stage FINISHED]
+[2024-08-07 11:59:02,743:INFO:main:>>>>>> stage Data ingestion stage started <<<<<]
+[2024-08-07 11:59:02,745:INFO:common:yaml file: config/config.yaml loaded successfully]
+[2024-08-07 11:59:02,747:INFO:common:yaml file: params.yaml loaded successfully]
+[2024-08-07 11:59:02,747:INFO:common:yaml file: schema.yaml loaded successfully]
+[2024-08-07 11:59:02,748:INFO:common:created directory at: artifacts]
+[2024-08-07 11:59:02,748:INFO:common:created directory at: artifacts/data_ingestion]
+[2024-08-07 11:59:03,338:INFO:data_ingestion:artifacts/data_ingestion/data-forecast.zip download! with following info: 
+Connection: close
+Content-Length: 48759
+Cache-Control: max-age=300
+Content-Security-Policy: default-src 'none'; style-src 'unsafe-inline'; sandbox
+Content-Type: application/zip
+ETag: "b242fa9b06100c658c6c8e3096b0d4b17390be7861c1ab51cdf6a2a7d19cf86c"
+Strict-Transport-Security: max-age=31536000
+X-Content-Type-Options: nosniff
+X-Frame-Options: deny
+X-XSS-Protection: 1; mode=block
+X-GitHub-Request-Id: 3322:344C9E:1192573:126D232:66B344C5
+Accept-Ranges: bytes
+Date: Wed, 07 Aug 2024 09:59:03 GMT
+Via: 1.1 varnish
+X-Served-By: cache-mad22037-MAD
+X-Cache: HIT
+X-Cache-Hits: 1
+X-Timer: S1723024743.358368,VS0,VE1
+Vary: Authorization,Accept-Encoding,Origin
+Access-Control-Allow-Origin: *
+Cross-Origin-Resource-Policy: cross-origin
+X-Fastly-Request-ID: b9c56b6a5e83fe3f5492d3cd812e0aac9f276f14
+Expires: Wed, 07 Aug 2024 10:04:03 GMT
+Source-Age: 162
+
+]
+[2024-08-07 11:59:03,343:INFO:main:>>>>>>>>> stage Data ingestion stage completed! <<<<<<]
+[2024-08-07 11:59:03,343:INFO:main:>>>>>>> stage Data validation stage STARTED]
+[2024-08-07 11:59:03,346:INFO:common:yaml file: config/config.yaml loaded successfully]
+[2024-08-07 11:59:03,348:INFO:common:yaml file: params.yaml loaded successfully]
+[2024-08-07 11:59:03,349:INFO:common:yaml file: schema.yaml loaded successfully]
+[2024-08-07 11:59:03,349:INFO:common:created directory at: artifacts]
+[2024-08-07 11:59:03,349:INFO:common:created directory at: artifacts/data_validation]
+[2024-08-07 11:59:03,363:INFO:main:>>>>>>>> stage Data validation stage COMPLETED]
+[2024-08-07 11:59:03,363:INFO:main:>>>>>>> Data Cleaning stage STARTED]
+[2024-08-07 11:59:03,366:INFO:common:yaml file: config/config.yaml loaded successfully]
+[2024-08-07 11:59:03,367:INFO:common:yaml file: params.yaml loaded successfully]
+[2024-08-07 11:59:03,368:INFO:common:yaml file: schema.yaml loaded successfully]
+[2024-08-07 11:59:03,368:INFO:common:created directory at: artifacts]
+[2024-08-07 11:59:03,368:INFO:common:created directory at: artifacts/data_cleaning]
+[2024-08-07 11:59:03,400:INFO:data_cleaning:Train and test data prepared and saved.]
+[2024-08-07 11:59:03,400:INFO:data_cleaning:Data shape after transformation: (1089, 2)]
+[2024-08-07 11:59:03,400:INFO:main:>>>>>>>> stage {STAGE_NAME} COMPLETED]
+[2024-08-07 11:59:03,400:INFO:main:>>>>>>>>>> Data preparation stage STARTED]
+[2024-08-07 11:59:03,402:INFO:common:yaml file: config/config.yaml loaded successfully]
+[2024-08-07 11:59:03,402:INFO:common:yaml file: params.yaml loaded successfully]
+[2024-08-07 11:59:03,403:INFO:common:yaml file: schema.yaml loaded successfully]
+[2024-08-07 11:59:03,403:INFO:common:created directory at: artifacts]
+[2024-08-07 11:59:03,403:INFO:common:created directory at: artifacts/data_preparation]
+[2024-08-07 11:59:03,404:INFO:data_preparation:Transform and split done!]
+[2024-08-07 11:59:03,412:INFO:data_preparation:Tensors succesfully saved in: artifacts/data_preparation/tensors.pt]
+[2024-08-07 11:59:03,412:INFO:main:>>>>>>>>>> Data preparation stage FINISHED]
+[2024-08-07 11:59:03,413:INFO:main:>>>>>>>>>> Model training stage STARTED]
+[2024-08-07 11:59:03,414:INFO:common:yaml file: config/config.yaml loaded successfully]
+[2024-08-07 11:59:03,414:INFO:common:yaml file: params.yaml loaded successfully]
+[2024-08-07 11:59:03,415:INFO:common:yaml file: schema.yaml loaded successfully]
+[2024-08-07 11:59:03,415:INFO:common:created directory at: artifacts]
+[2024-08-07 11:59:03,415:INFO:common:created directory at: artifacts/model_trainer]
+[2024-08-07 11:59:03,946:INFO:model_trainer:Train loss from Torch Model0.06738707761153571]
+[2024-08-07 11:59:04,006:INFO:model_trainer:Train loss from Torch Model0.005581724282530393]
+[2024-08-07 11:59:04,069:INFO:model_trainer:Train loss from Torch Model0.005542775873064701]
+[2024-08-07 11:59:04,128:INFO:model_trainer:Train loss from Torch Model0.005396513777668588]
+[2024-08-07 11:59:04,188:INFO:model_trainer:Train loss from Torch Model0.005408079500987448]
+[2024-08-07 11:59:04,247:INFO:model_trainer:Train loss from Torch Model0.005281214682079074]
+[2024-08-07 11:59:04,305:INFO:model_trainer:Train loss from Torch Model0.0052990742589868614]
+[2024-08-07 11:59:04,364:INFO:model_trainer:Train loss from Torch Model0.005471820487648735]
+[2024-08-07 11:59:04,423:INFO:model_trainer:Train loss from Torch Model0.005527645543307616]
+[2024-08-07 11:59:04,481:INFO:model_trainer:Train loss from Torch Model0.005207065449212678]
+[2024-08-07 11:59:04,540:INFO:model_trainer:Train loss from Torch Model0.005412274348517795]
+[2024-08-07 11:59:04,599:INFO:model_trainer:Train loss from Torch Model0.005281213157207854]
+[2024-08-07 11:59:04,659:INFO:model_trainer:Train loss from Torch Model0.005676831694886046]
+[2024-08-07 11:59:04,719:INFO:model_trainer:Train loss from Torch Model0.005261932372046762]
+[2024-08-07 11:59:04,777:INFO:model_trainer:Train loss from Torch Model0.005384593748947902]
+[2024-08-07 11:59:04,837:INFO:model_trainer:Train loss from Torch Model0.0052331495886722805]
+[2024-08-07 11:59:04,896:INFO:model_trainer:Train loss from Torch Model0.005289738792519281]
+[2024-08-07 11:59:04,954:INFO:model_trainer:Train loss from Torch Model0.005295884778289209]
+[2024-08-07 11:59:05,013:INFO:model_trainer:Train loss from Torch Model0.005438564018483951]
+[2024-08-07 11:59:05,073:INFO:model_trainer:Train loss from Torch Model0.00592844217515614]
+[2024-08-07 11:59:05,073:INFO:main:>>>>>>>>>> Model training stage FINISHED]
+[2024-08-07 11:59:05,073:INFO:main:>>>>>>>>>> Data evaluation stage STARTED]
+[2024-08-07 11:59:05,074:INFO:common:yaml file: config/config.yaml loaded successfully]
+[2024-08-07 11:59:05,075:INFO:common:yaml file: params.yaml loaded successfully]
+[2024-08-07 11:59:05,075:INFO:common:yaml file: schema.yaml loaded successfully]
+[2024-08-07 11:59:05,075:INFO:common:created directory at: artifacts]
+[2024-08-07 11:59:05,455:INFO:main:>>>>>>>>>> Data evaluation stage FINISHED]
+[2024-08-07 11:59:28,746:INFO:main:>>>>>> stage Data ingestion stage started <<<<<]
+[2024-08-07 11:59:28,748:INFO:common:yaml file: config/config.yaml loaded successfully]
+[2024-08-07 11:59:28,750:INFO:common:yaml file: params.yaml loaded successfully]
+[2024-08-07 11:59:28,750:INFO:common:yaml file: schema.yaml loaded successfully]
+[2024-08-07 11:59:28,750:INFO:common:created directory at: artifacts]
+[2024-08-07 11:59:28,750:INFO:common:created directory at: artifacts/data_ingestion]
+[2024-08-07 11:59:29,157:INFO:data_ingestion:artifacts/data_ingestion/data-forecast.zip download! with following info: 
+Connection: close
+Content-Length: 48759
+Cache-Control: max-age=300
+Content-Security-Policy: default-src 'none'; style-src 'unsafe-inline'; sandbox
+Content-Type: application/zip
+ETag: "b242fa9b06100c658c6c8e3096b0d4b17390be7861c1ab51cdf6a2a7d19cf86c"
+Strict-Transport-Security: max-age=31536000
+X-Content-Type-Options: nosniff
+X-Frame-Options: deny
+X-XSS-Protection: 1; mode=block
+X-GitHub-Request-Id: 3322:344C9E:1192573:126D232:66B344C5
+Accept-Ranges: bytes
+Date: Wed, 07 Aug 2024 09:59:29 GMT
+Via: 1.1 varnish
+X-Served-By: cache-mad2200104-MAD
+X-Cache: HIT
+X-Cache-Hits: 1
+X-Timer: S1723024769.189708,VS0,VE1
+Vary: Authorization,Accept-Encoding,Origin
+Access-Control-Allow-Origin: *
+Cross-Origin-Resource-Policy: cross-origin
+X-Fastly-Request-ID: 0506d6fe870c740c1637e1c21d471d9a9b08ad28
+Expires: Wed, 07 Aug 2024 10:04:29 GMT
+Source-Age: 188
+
+]
+[2024-08-07 11:59:29,162:INFO:main:>>>>>>>>> stage Data ingestion stage completed! <<<<<<]
+[2024-08-07 11:59:29,162:INFO:main:>>>>>>> stage Data validation stage STARTED]
+[2024-08-07 11:59:29,165:INFO:common:yaml file: config/config.yaml loaded successfully]
+[2024-08-07 11:59:29,167:INFO:common:yaml file: params.yaml loaded successfully]
+[2024-08-07 11:59:29,168:INFO:common:yaml file: schema.yaml loaded successfully]
+[2024-08-07 11:59:29,168:INFO:common:created directory at: artifacts]
+[2024-08-07 11:59:29,168:INFO:common:created directory at: artifacts/data_validation]
+[2024-08-07 11:59:29,181:INFO:main:>>>>>>>> stage Data validation stage COMPLETED]
+[2024-08-07 11:59:29,182:INFO:main:>>>>>>> Data Cleaning stage STARTED]
+[2024-08-07 11:59:29,184:INFO:common:yaml file: config/config.yaml loaded successfully]
+[2024-08-07 11:59:29,185:INFO:common:yaml file: params.yaml loaded successfully]
+[2024-08-07 11:59:29,186:INFO:common:yaml file: schema.yaml loaded successfully]
+[2024-08-07 11:59:29,186:INFO:common:created directory at: artifacts]
+[2024-08-07 11:59:29,186:INFO:common:created directory at: artifacts/data_cleaning]
+[2024-08-07 11:59:29,219:INFO:data_cleaning:Train and test data prepared and saved.]
+[2024-08-07 11:59:29,219:INFO:data_cleaning:Data shape after transformation: (1089, 2)]
+[2024-08-07 11:59:29,219:INFO:main:>>>>>>>> stage {STAGE_NAME} COMPLETED]
+[2024-08-07 11:59:29,219:INFO:main:>>>>>>>>>> Data preparation stage STARTED]
+[2024-08-07 11:59:29,221:INFO:common:yaml file: config/config.yaml loaded successfully]
+[2024-08-07 11:59:29,221:INFO:common:yaml file: params.yaml loaded successfully]
+[2024-08-07 11:59:29,222:INFO:common:yaml file: schema.yaml loaded successfully]
+[2024-08-07 11:59:29,222:INFO:common:created directory at: artifacts]
+[2024-08-07 11:59:29,222:INFO:common:created directory at: artifacts/data_preparation]
+[2024-08-07 11:59:29,223:INFO:data_preparation:Transform and split done!]
+[2024-08-07 11:59:29,232:INFO:data_preparation:Tensors succesfully saved in: artifacts/data_preparation/tensors.pt]
+[2024-08-07 11:59:29,232:INFO:main:>>>>>>>>>> Data preparation stage FINISHED]
+[2024-08-07 11:59:29,232:INFO:main:>>>>>>>>>> Model training stage STARTED]
+[2024-08-07 11:59:29,234:INFO:common:yaml file: config/config.yaml loaded successfully]
+[2024-08-07 11:59:29,234:INFO:common:yaml file: params.yaml loaded successfully]
+[2024-08-07 11:59:29,235:INFO:common:yaml file: schema.yaml loaded successfully]
+[2024-08-07 11:59:29,235:INFO:common:created directory at: artifacts]
+[2024-08-07 11:59:29,235:INFO:common:created directory at: artifacts/model_trainer]
+[2024-08-07 11:59:29,768:INFO:model_trainer:Train loss from Torch Model0.1992187452163886]
+[2024-08-07 11:59:29,828:INFO:model_trainer:Train loss from Torch Model0.13584739416414363]
+[2024-08-07 11:59:29,889:INFO:model_trainer:Train loss from Torch Model0.10072631147605451]
+[2024-08-07 11:59:29,949:INFO:model_trainer:Train loss from Torch Model0.06948442103616385]
+[2024-08-07 11:59:30,007:INFO:model_trainer:Train loss from Torch Model0.04388478030027314]
+[2024-08-07 11:59:30,066:INFO:model_trainer:Train loss from Torch Model0.02234303987841651]
+[2024-08-07 11:59:30,124:INFO:model_trainer:Train loss from Torch Model0.011270751882958311]
+[2024-08-07 11:59:30,182:INFO:model_trainer:Train loss from Torch Model0.006724874752850693]
+[2024-08-07 11:59:30,240:INFO:model_trainer:Train loss from Torch Model0.005594968679361045]
+[2024-08-07 11:59:30,300:INFO:model_trainer:Train loss from Torch Model0.005322136733659797]
+[2024-08-07 11:59:30,300:INFO:main:>>>>>>>>>> Model training stage FINISHED]
+[2024-08-07 11:59:30,300:INFO:main:>>>>>>>>>> Data evaluation stage STARTED]
+[2024-08-07 11:59:30,301:INFO:common:yaml file: config/config.yaml loaded successfully]
+[2024-08-07 11:59:30,302:INFO:common:yaml file: params.yaml loaded successfully]
+[2024-08-07 11:59:30,302:INFO:common:yaml file: schema.yaml loaded successfully]
+[2024-08-07 11:59:30,302:INFO:common:created directory at: artifacts]
+[2024-08-07 11:59:30,631:INFO:main:>>>>>>>>>> Data evaluation stage FINISHED]
+[2024-08-07 12:02:29,355:INFO:helpers:Accessing as carlosgutierrezch]
+[2024-08-07 12:02:29,569:INFO:helpers:Initialized MLflow to track repo "carlosgutierrezch/ml-flow"]
+[2024-08-07 12:02:29,569:INFO:helpers:Repository carlosgutierrezch/ml-flow initialized!]
+[2024-08-07 12:02:29,570:INFO:main:>>>>>> stage Data ingestion stage started <<<<<]
+[2024-08-07 12:02:29,574:INFO:common:yaml file: config/config.yaml loaded successfully]
+[2024-08-07 12:02:29,578:INFO:common:yaml file: params.yaml loaded successfully]
+[2024-08-07 12:02:29,579:INFO:common:yaml file: schema.yaml loaded successfully]
+[2024-08-07 12:02:29,580:INFO:common:created directory at: artifacts]
+[2024-08-07 12:02:29,580:INFO:common:created directory at: artifacts/data_ingestion]
+[2024-08-07 12:02:30,476:INFO:data_ingestion:artifacts/data_ingestion/data-forecast.zip download! with following info: 
+Connection: close
+Content-Length: 48759
+Cache-Control: max-age=300
+Content-Security-Policy: default-src 'none'; style-src 'unsafe-inline'; sandbox
+Content-Type: application/zip
+ETag: "b242fa9b06100c658c6c8e3096b0d4b17390be7861c1ab51cdf6a2a7d19cf86c"
+Strict-Transport-Security: max-age=31536000
+X-Content-Type-Options: nosniff
+X-Frame-Options: deny
+X-XSS-Protection: 1; mode=block
+X-GitHub-Request-Id: 3322:344C9E:1192573:126D232:66B344C5
+Accept-Ranges: bytes
+Date: Wed, 07 Aug 2024 10:02:30 GMT
+Via: 1.1 varnish
+X-Served-By: cache-mad22031-MAD
+X-Cache: HIT
+X-Cache-Hits: 0
+X-Timer: S1723024950.243388,VS0,VE264
+Vary: Authorization,Accept-Encoding,Origin
+Access-Control-Allow-Origin: *
+Cross-Origin-Resource-Policy: cross-origin
+X-Fastly-Request-ID: 58df50a205aabb09c979e34177904724b18e381c
+Expires: Wed, 07 Aug 2024 10:07:30 GMT
+Source-Age: 0
+
+]
+[2024-08-07 12:02:30,481:INFO:main:>>>>>>>>> stage Data ingestion stage completed! <<<<<<]
+[2024-08-07 12:02:30,481:INFO:main:>>>>>>> stage Data validation stage STARTED]
+[2024-08-07 12:02:30,484:INFO:common:yaml file: config/config.yaml loaded successfully]
+[2024-08-07 12:02:30,486:INFO:common:yaml file: params.yaml loaded successfully]
+[2024-08-07 12:02:30,487:INFO:common:yaml file: schema.yaml loaded successfully]
+[2024-08-07 12:02:30,487:INFO:common:created directory at: artifacts]
+[2024-08-07 12:02:30,487:INFO:common:created directory at: artifacts/data_validation]
+[2024-08-07 12:02:30,501:INFO:main:>>>>>>>> stage Data validation stage COMPLETED]
+[2024-08-07 12:02:30,501:INFO:main:>>>>>>> Data Cleaning stage STARTED]
+[2024-08-07 12:02:30,503:INFO:common:yaml file: config/config.yaml loaded successfully]
+[2024-08-07 12:02:30,504:INFO:common:yaml file: params.yaml loaded successfully]
+[2024-08-07 12:02:30,505:INFO:common:yaml file: schema.yaml loaded successfully]
+[2024-08-07 12:02:30,505:INFO:common:created directory at: artifacts]
+[2024-08-07 12:02:30,505:INFO:common:created directory at: artifacts/data_cleaning]
+[2024-08-07 12:02:30,539:INFO:data_cleaning:Train and test data prepared and saved.]
+[2024-08-07 12:02:30,540:INFO:data_cleaning:Data shape after transformation: (1089, 2)]
+[2024-08-07 12:02:30,540:INFO:main:>>>>>>>> stage {STAGE_NAME} COMPLETED]
+[2024-08-07 12:02:30,540:INFO:main:>>>>>>>>>> Data preparation stage STARTED]
+[2024-08-07 12:02:30,541:INFO:common:yaml file: config/config.yaml loaded successfully]
+[2024-08-07 12:02:30,542:INFO:common:yaml file: params.yaml loaded successfully]
+[2024-08-07 12:02:30,542:INFO:common:yaml file: schema.yaml loaded successfully]
+[2024-08-07 12:02:30,542:INFO:common:created directory at: artifacts]
+[2024-08-07 12:02:30,542:INFO:common:created directory at: artifacts/data_preparation]
+[2024-08-07 12:02:30,543:INFO:data_preparation:Transform and split done!]
+[2024-08-07 12:02:30,553:INFO:data_preparation:Tensors succesfully saved in: artifacts/data_preparation/tensors.pt]
+[2024-08-07 12:02:30,553:INFO:main:>>>>>>>>>> Data preparation stage FINISHED]
+[2024-08-07 12:02:30,553:INFO:main:>>>>>>>>>> Model training stage STARTED]
+[2024-08-07 12:02:30,554:INFO:common:yaml file: config/config.yaml loaded successfully]
+[2024-08-07 12:02:30,555:INFO:common:yaml file: params.yaml loaded successfully]
+[2024-08-07 12:02:30,555:INFO:common:yaml file: schema.yaml loaded successfully]
+[2024-08-07 12:02:30,555:INFO:common:created directory at: artifacts]
+[2024-08-07 12:02:30,555:INFO:common:created directory at: artifacts/model_trainer]
+[2024-08-07 12:02:31,165:INFO:model_trainer:Train loss from Torch Model0.1992187452163886]
+[2024-08-07 12:02:31,223:INFO:model_trainer:Train loss from Torch Model0.13584739416414363]
+[2024-08-07 12:02:31,284:INFO:model_trainer:Train loss from Torch Model0.10072631147605451]
+[2024-08-07 12:02:31,343:INFO:model_trainer:Train loss from Torch Model0.06948442103616385]
+[2024-08-07 12:02:31,402:INFO:model_trainer:Train loss from Torch Model0.04388478030027314]
+[2024-08-07 12:02:31,462:INFO:model_trainer:Train loss from Torch Model0.02234303987841651]
+[2024-08-07 12:02:31,529:INFO:model_trainer:Train loss from Torch Model0.011270751882958311]
+[2024-08-07 12:02:31,588:INFO:model_trainer:Train loss from Torch Model0.006724874752850693]
+[2024-08-07 12:02:31,647:INFO:model_trainer:Train loss from Torch Model0.005594968679361045]
+[2024-08-07 12:02:31,706:INFO:model_trainer:Train loss from Torch Model0.005322136733659797]
+[2024-08-07 12:02:31,707:INFO:main:>>>>>>>>>> Model training stage FINISHED]
+[2024-08-07 12:02:31,707:INFO:main:>>>>>>>>>> Data evaluation stage STARTED]
+[2024-08-07 12:02:31,708:INFO:common:yaml file: config/config.yaml loaded successfully]
+[2024-08-07 12:02:31,708:INFO:common:yaml file: params.yaml loaded successfully]
+[2024-08-07 12:02:31,709:INFO:common:yaml file: schema.yaml loaded successfully]
+[2024-08-07 12:02:31,709:INFO:common:created directory at: artifacts]
+[2024-08-07 12:02:33,333:INFO:main:>>>>>>>>>> Data evaluation stage FINISHED]
+[2024-08-07 12:03:01,455:INFO:helpers:Accessing as carlosgutierrezch]
+[2024-08-07 12:03:01,696:INFO:helpers:Initialized MLflow to track repo "carlosgutierrezch/ml-flow"]
+[2024-08-07 12:03:01,697:INFO:helpers:Repository carlosgutierrezch/ml-flow initialized!]
+[2024-08-07 12:03:01,698:INFO:main:>>>>>> stage Data ingestion stage started <<<<<]
+[2024-08-07 12:03:01,706:INFO:common:yaml file: config/config.yaml loaded successfully]
+[2024-08-07 12:03:01,709:INFO:common:yaml file: params.yaml loaded successfully]
+[2024-08-07 12:03:01,710:INFO:common:yaml file: schema.yaml loaded successfully]
+[2024-08-07 12:03:01,711:INFO:common:created directory at: artifacts]
+[2024-08-07 12:03:01,711:INFO:common:created directory at: artifacts/data_ingestion]
+[2024-08-07 12:03:02,008:INFO:data_ingestion:artifacts/data_ingestion/data-forecast.zip download! with following info: 
+Connection: close
+Content-Length: 48759
+Cache-Control: max-age=300
+Content-Security-Policy: default-src 'none'; style-src 'unsafe-inline'; sandbox
+Content-Type: application/zip
+ETag: "b242fa9b06100c658c6c8e3096b0d4b17390be7861c1ab51cdf6a2a7d19cf86c"
+Strict-Transport-Security: max-age=31536000
+X-Content-Type-Options: nosniff
+X-Frame-Options: deny
+X-XSS-Protection: 1; mode=block
+X-GitHub-Request-Id: 3322:344C9E:1192573:126D232:66B344C5
+Accept-Ranges: bytes
+Date: Wed, 07 Aug 2024 10:03:02 GMT
+Via: 1.1 varnish
+X-Served-By: cache-mad2200086-MAD
+X-Cache: HIT
+X-Cache-Hits: 1
+X-Timer: S1723024982.034255,VS0,VE1
+Vary: Authorization,Accept-Encoding,Origin
+Access-Control-Allow-Origin: *
+Cross-Origin-Resource-Policy: cross-origin
+X-Fastly-Request-ID: 5f266c108f5972932d3e7300297cede87681e0a3
+Expires: Wed, 07 Aug 2024 10:08:02 GMT
+Source-Age: 32
+
+]
+[2024-08-07 12:03:02,012:INFO:main:>>>>>>>>> stage Data ingestion stage completed! <<<<<<]
+[2024-08-07 12:03:02,012:INFO:main:>>>>>>> stage Data validation stage STARTED]
+[2024-08-07 12:03:02,015:INFO:common:yaml file: config/config.yaml loaded successfully]
+[2024-08-07 12:03:02,016:INFO:common:yaml file: params.yaml loaded successfully]
+[2024-08-07 12:03:02,017:INFO:common:yaml file: schema.yaml loaded successfully]
+[2024-08-07 12:03:02,017:INFO:common:created directory at: artifacts]
+[2024-08-07 12:03:02,017:INFO:common:created directory at: artifacts/data_validation]
+[2024-08-07 12:03:02,028:INFO:main:>>>>>>>> stage Data validation stage COMPLETED]
+[2024-08-07 12:03:02,028:INFO:main:>>>>>>> Data Cleaning stage STARTED]
+[2024-08-07 12:03:02,030:INFO:common:yaml file: config/config.yaml loaded successfully]
+[2024-08-07 12:03:02,030:INFO:common:yaml file: params.yaml loaded successfully]
+[2024-08-07 12:03:02,031:INFO:common:yaml file: schema.yaml loaded successfully]
+[2024-08-07 12:03:02,031:INFO:common:created directory at: artifacts]
+[2024-08-07 12:03:02,031:INFO:common:created directory at: artifacts/data_cleaning]
+[2024-08-07 12:03:02,061:INFO:data_cleaning:Train and test data prepared and saved.]
+[2024-08-07 12:03:02,061:INFO:data_cleaning:Data shape after transformation: (1089, 2)]
+[2024-08-07 12:03:02,061:INFO:main:>>>>>>>> stage {STAGE_NAME} COMPLETED]
+[2024-08-07 12:03:02,061:INFO:main:>>>>>>>>>> Data preparation stage STARTED]
+[2024-08-07 12:03:02,062:INFO:common:yaml file: config/config.yaml loaded successfully]
+[2024-08-07 12:03:02,063:INFO:common:yaml file: params.yaml loaded successfully]
+[2024-08-07 12:03:02,064:INFO:common:yaml file: schema.yaml loaded successfully]
+[2024-08-07 12:03:02,064:INFO:common:created directory at: artifacts]
+[2024-08-07 12:03:02,064:INFO:common:created directory at: artifacts/data_preparation]
+[2024-08-07 12:03:02,065:INFO:data_preparation:Transform and split done!]
+[2024-08-07 12:03:02,075:INFO:data_preparation:Tensors succesfully saved in: artifacts/data_preparation/tensors.pt]
+[2024-08-07 12:03:02,075:INFO:main:>>>>>>>>>> Data preparation stage FINISHED]
+[2024-08-07 12:03:02,075:INFO:main:>>>>>>>>>> Model training stage STARTED]
+[2024-08-07 12:03:02,076:INFO:common:yaml file: config/config.yaml loaded successfully]
+[2024-08-07 12:03:02,077:INFO:common:yaml file: params.yaml loaded successfully]
+[2024-08-07 12:03:02,077:INFO:common:yaml file: schema.yaml loaded successfully]
+[2024-08-07 12:03:02,077:INFO:common:created directory at: artifacts]
+[2024-08-07 12:03:02,077:INFO:common:created directory at: artifacts/model_trainer]
+[2024-08-07 12:03:02,643:INFO:model_trainer:Train loss from Torch Model0.06738707761153571]
+[2024-08-07 12:03:02,703:INFO:model_trainer:Train loss from Torch Model0.005581724282530393]
+[2024-08-07 12:03:02,763:INFO:model_trainer:Train loss from Torch Model0.005542775873064701]
+[2024-08-07 12:03:02,822:INFO:model_trainer:Train loss from Torch Model0.005396513777668588]
+[2024-08-07 12:03:02,884:INFO:model_trainer:Train loss from Torch Model0.005408079500987448]
+[2024-08-07 12:03:02,943:INFO:model_trainer:Train loss from Torch Model0.005281214682079074]
+[2024-08-07 12:03:03,002:INFO:model_trainer:Train loss from Torch Model0.0052990742589868614]
+[2024-08-07 12:03:03,061:INFO:model_trainer:Train loss from Torch Model0.005471820487648735]
+[2024-08-07 12:03:03,122:INFO:model_trainer:Train loss from Torch Model0.005527645543307616]
+[2024-08-07 12:03:03,181:INFO:model_trainer:Train loss from Torch Model0.005207065449212678]
+[2024-08-07 12:03:03,240:INFO:model_trainer:Train loss from Torch Model0.005412274348517795]
+[2024-08-07 12:03:03,299:INFO:model_trainer:Train loss from Torch Model0.005281213157207854]
+[2024-08-07 12:03:03,357:INFO:model_trainer:Train loss from Torch Model0.005676831694886046]
+[2024-08-07 12:03:03,416:INFO:model_trainer:Train loss from Torch Model0.005261932372046762]
+[2024-08-07 12:03:03,474:INFO:model_trainer:Train loss from Torch Model0.005384593748947902]
+[2024-08-07 12:03:03,533:INFO:model_trainer:Train loss from Torch Model0.0052331495886722805]
+[2024-08-07 12:03:03,592:INFO:model_trainer:Train loss from Torch Model0.005289738792519281]
+[2024-08-07 12:03:03,650:INFO:model_trainer:Train loss from Torch Model0.005295884778289209]
+[2024-08-07 12:03:03,708:INFO:model_trainer:Train loss from Torch Model0.005438564018483951]
+[2024-08-07 12:03:03,767:INFO:model_trainer:Train loss from Torch Model0.00592844217515614]
+[2024-08-07 12:03:03,767:INFO:main:>>>>>>>>>> Model training stage FINISHED]
+[2024-08-07 12:03:03,767:INFO:main:>>>>>>>>>> Data evaluation stage STARTED]
+[2024-08-07 12:03:03,768:INFO:common:yaml file: config/config.yaml loaded successfully]
+[2024-08-07 12:03:03,769:INFO:common:yaml file: params.yaml loaded successfully]
+[2024-08-07 12:03:03,769:INFO:common:yaml file: schema.yaml loaded successfully]
+[2024-08-07 12:03:03,769:INFO:common:created directory at: artifacts]
+[2024-08-07 12:03:05,381:INFO:main:>>>>>>>>>> Data evaluation stage FINISHED]
+[2024-08-07 12:03:21,040:INFO:helpers:Accessing as carlosgutierrezch]
+[2024-08-07 12:03:21,263:INFO:helpers:Initialized MLflow to track repo "carlosgutierrezch/ml-flow"]
+[2024-08-07 12:03:21,264:INFO:helpers:Repository carlosgutierrezch/ml-flow initialized!]
+[2024-08-07 12:03:21,265:INFO:main:>>>>>> stage Data ingestion stage started <<<<<]
+[2024-08-07 12:03:21,270:INFO:common:yaml file: config/config.yaml loaded successfully]
+[2024-08-07 12:03:21,273:INFO:common:yaml file: params.yaml loaded successfully]
+[2024-08-07 12:03:21,274:INFO:common:yaml file: schema.yaml loaded successfully]
+[2024-08-07 12:03:21,275:INFO:common:created directory at: artifacts]
+[2024-08-07 12:03:21,275:INFO:common:created directory at: artifacts/data_ingestion]
+[2024-08-07 12:03:21,275:INFO:data_ingestion:File already exists of size: ~ 48 KB]
+[2024-08-07 12:03:21,278:INFO:main:>>>>>>>>> stage Data ingestion stage completed! <<<<<<]
+[2024-08-07 12:03:21,278:INFO:main:>>>>>>> stage Data validation stage STARTED]
+[2024-08-07 12:03:21,281:INFO:common:yaml file: config/config.yaml loaded successfully]
+[2024-08-07 12:03:21,282:INFO:common:yaml file: params.yaml loaded successfully]
+[2024-08-07 12:03:21,283:INFO:common:yaml file: schema.yaml loaded successfully]
+[2024-08-07 12:03:21,283:INFO:common:created directory at: artifacts]
+[2024-08-07 12:03:21,283:INFO:common:created directory at: artifacts/data_validation]
+[2024-08-07 12:03:21,297:INFO:main:>>>>>>>> stage Data validation stage COMPLETED]
+[2024-08-07 12:03:21,297:INFO:main:>>>>>>> Data Cleaning stage STARTED]
+[2024-08-07 12:03:21,301:INFO:common:yaml file: config/config.yaml loaded successfully]
+[2024-08-07 12:03:21,302:INFO:common:yaml file: params.yaml loaded successfully]
+[2024-08-07 12:03:21,303:INFO:common:yaml file: schema.yaml loaded successfully]
+[2024-08-07 12:03:21,303:INFO:common:created directory at: artifacts]
+[2024-08-07 12:03:21,303:INFO:common:created directory at: artifacts/data_cleaning]
+[2024-08-07 12:03:21,332:INFO:data_cleaning:Train and test data prepared and saved.]
+[2024-08-07 12:03:21,332:INFO:data_cleaning:Data shape after transformation: (1089, 2)]
+[2024-08-07 12:03:21,332:INFO:main:>>>>>>>> stage {STAGE_NAME} COMPLETED]
+[2024-08-07 12:03:21,332:INFO:main:>>>>>>>>>> Data preparation stage STARTED]
+[2024-08-07 12:03:21,334:INFO:common:yaml file: config/config.yaml loaded successfully]
+[2024-08-07 12:03:21,334:INFO:common:yaml file: params.yaml loaded successfully]
+[2024-08-07 12:03:21,335:INFO:common:yaml file: schema.yaml loaded successfully]
+[2024-08-07 12:03:21,335:INFO:common:created directory at: artifacts]
+[2024-08-07 12:03:21,335:INFO:common:created directory at: artifacts/data_preparation]
+[2024-08-07 12:03:21,336:INFO:data_preparation:Transform and split done!]
+[2024-08-07 12:03:21,344:INFO:data_preparation:Tensors succesfully saved in: artifacts/data_preparation/tensors.pt]
+[2024-08-07 12:03:21,344:INFO:main:>>>>>>>>>> Data preparation stage FINISHED]
+[2024-08-07 12:03:21,344:INFO:main:>>>>>>>>>> Model training stage STARTED]
+[2024-08-07 12:03:21,346:INFO:common:yaml file: config/config.yaml loaded successfully]
+[2024-08-07 12:03:21,346:INFO:common:yaml file: params.yaml loaded successfully]
+[2024-08-07 12:03:21,346:INFO:common:yaml file: schema.yaml loaded successfully]
+[2024-08-07 12:03:21,347:INFO:common:created directory at: artifacts]
+[2024-08-07 12:03:21,347:INFO:common:created directory at: artifacts/model_trainer]
+[2024-08-07 12:03:21,895:INFO:model_trainer:Train loss from Torch Model0.06738707761153571]
+[2024-08-07 12:03:21,954:INFO:model_trainer:Train loss from Torch Model0.005581724282530393]
+[2024-08-07 12:03:22,013:INFO:model_trainer:Train loss from Torch Model0.005542775873064701]
+[2024-08-07 12:03:22,074:INFO:model_trainer:Train loss from Torch Model0.005396513777668588]
+[2024-08-07 12:03:22,133:INFO:model_trainer:Train loss from Torch Model0.005408079500987448]
+[2024-08-07 12:03:22,193:INFO:model_trainer:Train loss from Torch Model0.005281214682079074]
+[2024-08-07 12:03:22,253:INFO:model_trainer:Train loss from Torch Model0.0052990742589868614]
+[2024-08-07 12:03:22,312:INFO:model_trainer:Train loss from Torch Model0.005471820487648735]
+[2024-08-07 12:03:22,371:INFO:model_trainer:Train loss from Torch Model0.005527645543307616]
+[2024-08-07 12:03:22,430:INFO:model_trainer:Train loss from Torch Model0.005207065449212678]
+[2024-08-07 12:03:22,489:INFO:model_trainer:Train loss from Torch Model0.005412274348517795]
+[2024-08-07 12:03:22,547:INFO:model_trainer:Train loss from Torch Model0.005281213157207854]
+[2024-08-07 12:03:22,613:INFO:model_trainer:Train loss from Torch Model0.005676831694886046]
+[2024-08-07 12:03:22,672:INFO:model_trainer:Train loss from Torch Model0.005261932372046762]
+[2024-08-07 12:03:22,731:INFO:model_trainer:Train loss from Torch Model0.005384593748947902]
+[2024-08-07 12:03:22,790:INFO:model_trainer:Train loss from Torch Model0.0052331495886722805]
+[2024-08-07 12:03:22,849:INFO:model_trainer:Train loss from Torch Model0.005289738792519281]
+[2024-08-07 12:03:22,908:INFO:model_trainer:Train loss from Torch Model0.005295884778289209]
+[2024-08-07 12:03:22,968:INFO:model_trainer:Train loss from Torch Model0.005438564018483951]
+[2024-08-07 12:03:23,026:INFO:model_trainer:Train loss from Torch Model0.00592844217515614]
+[2024-08-07 12:03:23,027:INFO:main:>>>>>>>>>> Model training stage FINISHED]
+[2024-08-07 12:03:23,027:INFO:main:>>>>>>>>>> Data evaluation stage STARTED]
+[2024-08-07 12:03:23,028:INFO:common:yaml file: config/config.yaml loaded successfully]
+[2024-08-07 12:03:23,028:INFO:common:yaml file: params.yaml loaded successfully]
+[2024-08-07 12:03:23,029:INFO:common:yaml file: schema.yaml loaded successfully]
+[2024-08-07 12:03:23,029:INFO:common:created directory at: artifacts]
+[2024-08-07 12:03:24,993:INFO:main:>>>>>>>>>> Data evaluation stage FINISHED]
+[2024-08-07 12:03:43,162:INFO:helpers:Accessing as carlosgutierrezch]
+[2024-08-07 12:03:43,381:INFO:helpers:Initialized MLflow to track repo "carlosgutierrezch/ml-flow"]
+[2024-08-07 12:03:43,382:INFO:helpers:Repository carlosgutierrezch/ml-flow initialized!]
+[2024-08-07 12:03:43,382:INFO:main:>>>>>> stage Data ingestion stage started <<<<<]
+[2024-08-07 12:03:43,387:INFO:common:yaml file: config/config.yaml loaded successfully]
+[2024-08-07 12:03:43,390:INFO:common:yaml file: params.yaml loaded successfully]
+[2024-08-07 12:03:43,391:INFO:common:yaml file: schema.yaml loaded successfully]
+[2024-08-07 12:03:43,392:INFO:common:created directory at: artifacts]
+[2024-08-07 12:03:43,392:INFO:common:created directory at: artifacts/data_ingestion]
+[2024-08-07 12:03:43,392:INFO:data_ingestion:File already exists of size: ~ 48 KB]
+[2024-08-07 12:03:43,395:INFO:main:>>>>>>>>> stage Data ingestion stage completed! <<<<<<]
+[2024-08-07 12:03:43,395:INFO:main:>>>>>>> stage Data validation stage STARTED]
+[2024-08-07 12:03:43,398:INFO:common:yaml file: config/config.yaml loaded successfully]
+[2024-08-07 12:03:43,399:INFO:common:yaml file: params.yaml loaded successfully]
+[2024-08-07 12:03:43,400:INFO:common:yaml file: schema.yaml loaded successfully]
+[2024-08-07 12:03:43,400:INFO:common:created directory at: artifacts]
+[2024-08-07 12:03:43,400:INFO:common:created directory at: artifacts/data_validation]
+[2024-08-07 12:03:43,412:INFO:main:>>>>>>>> stage Data validation stage COMPLETED]
+[2024-08-07 12:03:43,412:INFO:main:>>>>>>> Data Cleaning stage STARTED]
+[2024-08-07 12:03:43,414:INFO:common:yaml file: config/config.yaml loaded successfully]
+[2024-08-07 12:03:43,415:INFO:common:yaml file: params.yaml loaded successfully]
+[2024-08-07 12:03:43,416:INFO:common:yaml file: schema.yaml loaded successfully]
+[2024-08-07 12:03:43,416:INFO:common:created directory at: artifacts]
+[2024-08-07 12:03:43,416:INFO:common:created directory at: artifacts/data_cleaning]
+[2024-08-07 12:03:43,445:INFO:data_cleaning:Train and test data prepared and saved.]
+[2024-08-07 12:03:43,445:INFO:data_cleaning:Data shape after transformation: (1089, 2)]
+[2024-08-07 12:03:43,445:INFO:main:>>>>>>>> stage {STAGE_NAME} COMPLETED]
+[2024-08-07 12:03:43,445:INFO:main:>>>>>>>>>> Data preparation stage STARTED]
+[2024-08-07 12:03:43,447:INFO:common:yaml file: config/config.yaml loaded successfully]
+[2024-08-07 12:03:43,447:INFO:common:yaml file: params.yaml loaded successfully]
+[2024-08-07 12:03:43,448:INFO:common:yaml file: schema.yaml loaded successfully]
+[2024-08-07 12:03:43,448:INFO:common:created directory at: artifacts]
+[2024-08-07 12:03:43,448:INFO:common:created directory at: artifacts/data_preparation]
+[2024-08-07 12:03:43,449:INFO:data_preparation:Transform and split done!]
+[2024-08-07 12:03:43,457:INFO:data_preparation:Tensors succesfully saved in: artifacts/data_preparation/tensors.pt]
+[2024-08-07 12:03:43,457:INFO:main:>>>>>>>>>> Data preparation stage FINISHED]
+[2024-08-07 12:03:43,457:INFO:main:>>>>>>>>>> Model training stage STARTED]
+[2024-08-07 12:03:43,458:INFO:common:yaml file: config/config.yaml loaded successfully]
+[2024-08-07 12:03:43,459:INFO:common:yaml file: params.yaml loaded successfully]
+[2024-08-07 12:03:43,459:INFO:common:yaml file: schema.yaml loaded successfully]
+[2024-08-07 12:03:43,459:INFO:common:created directory at: artifacts]
+[2024-08-07 12:03:43,459:INFO:common:created directory at: artifacts/model_trainer]
+[2024-08-07 12:03:44,003:INFO:model_trainer:Train loss from Torch Model0.1992187452163886]
+[2024-08-07 12:03:44,062:INFO:model_trainer:Train loss from Torch Model0.13584739416414363]
+[2024-08-07 12:03:44,126:INFO:model_trainer:Train loss from Torch Model0.10072631147605451]
+[2024-08-07 12:03:44,186:INFO:model_trainer:Train loss from Torch Model0.06948442103616385]
+[2024-08-07 12:03:44,245:INFO:model_trainer:Train loss from Torch Model0.04388478030027314]
+[2024-08-07 12:03:44,304:INFO:model_trainer:Train loss from Torch Model0.02234303987841651]
+[2024-08-07 12:03:44,363:INFO:model_trainer:Train loss from Torch Model0.011270751882958311]
+[2024-08-07 12:03:44,421:INFO:model_trainer:Train loss from Torch Model0.006724874752850693]
+[2024-08-07 12:03:44,480:INFO:model_trainer:Train loss from Torch Model0.005594968679361045]
+[2024-08-07 12:03:44,538:INFO:model_trainer:Train loss from Torch Model0.005322136733659797]
+[2024-08-07 12:03:44,539:INFO:main:>>>>>>>>>> Model training stage FINISHED]
+[2024-08-07 12:03:44,539:INFO:main:>>>>>>>>>> Data evaluation stage STARTED]
+[2024-08-07 12:03:44,540:INFO:common:yaml file: config/config.yaml loaded successfully]
+[2024-08-07 12:03:44,540:INFO:common:yaml file: params.yaml loaded successfully]
+[2024-08-07 12:03:44,541:INFO:common:yaml file: schema.yaml loaded successfully]
+[2024-08-07 12:03:44,541:INFO:common:created directory at: artifacts]
+[2024-08-07 12:03:46,295:INFO:main:>>>>>>>>>> Data evaluation stage FINISHED]

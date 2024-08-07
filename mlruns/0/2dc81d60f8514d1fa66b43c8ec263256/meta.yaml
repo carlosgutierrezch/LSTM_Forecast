@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/main/Desktop/LSTM_Forecast/mlruns/0/2dc81d60f8514d1fa66b43c8ec263256/artifacts
+end_time: 1723024632945
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 2dc81d60f8514d1fa66b43c8ec263256
+run_name: peaceful-shrew-216
+run_uuid: 2dc81d60f8514d1fa66b43c8ec263256
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1723024632847
+status: 3
+tags: []
+user_id: main

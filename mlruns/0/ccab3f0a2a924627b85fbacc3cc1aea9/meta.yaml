@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/main/Desktop/LSTM_Forecast/mlruns/0/ccab3f0a2a924627b85fbacc3cc1aea9/artifacts
+end_time: 1723024770630
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: ccab3f0a2a924627b85fbacc3cc1aea9
+run_name: thundering-wren-110
+run_uuid: ccab3f0a2a924627b85fbacc3cc1aea9
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1723024770533
+status: 3
+tags: []
+user_id: main

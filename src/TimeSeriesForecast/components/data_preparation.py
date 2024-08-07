@@ -40,7 +40,6 @@ class DataPreparation:
             raise Exception(f'Problem Scaling the data: {e}')
     def transform_split_data(self):
         try:
-            X=np.flip(X,axis=1)
             X= self.transformed[:,1:]
             y= self.transformed[:,0]
             X= dc(np.flip(X,axis=1))

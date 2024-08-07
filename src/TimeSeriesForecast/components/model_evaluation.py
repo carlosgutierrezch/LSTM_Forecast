@@ -9,6 +9,10 @@ from torch.utils.data import DataLoader
 from notebooks.src.functions_torch import TimeSeries
 import mlflow
 from TimeSeriesForecast.entity.config_entity import ModelEvaluationConfig
+import mlflow.sklearn
+import dagshub
+dagshub.init(repo_owner='carlosgutierrezch', repo_name='ml-flow', mlflow=True)
+
 
 
 class ModelEvaluation:
