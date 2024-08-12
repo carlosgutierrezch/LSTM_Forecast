@@ -2827,3 +2827,113 @@ Source-Age: 32
 [2024-08-07 12:03:44,541:INFO:common:yaml file: schema.yaml loaded successfully]
 [2024-08-07 12:03:44,541:INFO:common:created directory at: artifacts]
 [2024-08-07 12:03:46,295:INFO:main:>>>>>>>>>> Data evaluation stage FINISHED]
+[2024-08-10 16:51:03,219:INFO:_internal:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.1.40:8080]
+[2024-08-10 16:51:03,220:INFO:_internal:[33mPress CTRL+C to quit[0m]
+[2024-08-10 16:51:03,227:INFO:_internal: * Restarting with stat]
+[2024-08-10 16:51:04,996:WARNING:_internal: * Debugger is active!]
+[2024-08-10 16:51:05,016:INFO:_internal: * Debugger PIN: 412-385-189]
+[2024-08-10 16:51:16,113:INFO:_internal:127.0.0.1 - - [10/Aug/2024 16:51:16] "GET / HTTP/1.1" 200 -]
+[2024-08-10 16:51:16,428:INFO:_internal:127.0.0.1 - - [10/Aug/2024 16:51:16] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -]
+[2024-08-10 16:55:20,965:INFO:_internal: * Detected change in '/Users/main/Desktop/LSTM_Forecast/app.py', reloading]
+[2024-08-10 16:55:21,515:INFO:_internal: * Restarting with stat]
+[2024-08-10 16:55:23,565:WARNING:_internal: * Debugger is active!]
+[2024-08-10 16:55:23,578:INFO:_internal: * Debugger PIN: 412-385-189]
+[2024-08-10 16:56:06,084:INFO:_internal: * Detected change in '/Users/main/Desktop/LSTM_Forecast/app.py', reloading]
+[2024-08-10 16:56:06,377:INFO:_internal: * Restarting with stat]
+[2024-08-10 16:56:07,971:WARNING:_internal: * Debugger is active!]
+[2024-08-10 16:56:07,986:INFO:_internal: * Debugger PIN: 412-385-189]
+[2024-08-10 16:56:47,212:INFO:helpers:Accessing as carlosgutierrezch]
+[2024-08-10 16:56:48,204:INFO:helpers:Initialized MLflow to track repo "carlosgutierrezch/ml-flow"]
+[2024-08-10 16:56:48,205:INFO:helpers:Repository carlosgutierrezch/ml-flow initialized!]
+[2024-08-10 16:56:48,206:INFO:main:>>>>>> stage Data ingestion stage started <<<<<]
+[2024-08-10 16:56:48,212:INFO:common:yaml file: config/config.yaml loaded successfully]
+[2024-08-10 16:56:48,215:INFO:common:yaml file: params.yaml loaded successfully]
+[2024-08-10 16:56:48,217:INFO:common:yaml file: schema.yaml loaded successfully]
+[2024-08-10 16:56:48,218:INFO:common:created directory at: artifacts]
+[2024-08-10 16:56:48,218:INFO:common:created directory at: artifacts/data_ingestion]
+[2024-08-10 16:56:49,462:INFO:data_ingestion:artifacts/data_ingestion/data-forecast.zip download! with following info: 
+Connection: close
+Content-Length: 48759
+Cache-Control: max-age=300
+Content-Security-Policy: default-src 'none'; style-src 'unsafe-inline'; sandbox
+Content-Type: application/zip
+ETag: "b242fa9b06100c658c6c8e3096b0d4b17390be7861c1ab51cdf6a2a7d19cf86c"
+Strict-Transport-Security: max-age=31536000
+X-Content-Type-Options: nosniff
+X-Frame-Options: deny
+X-XSS-Protection: 1; mode=block
+X-GitHub-Request-Id: 0AFE:3B785E:343DDDE:36C051B:66B77FB1
+Accept-Ranges: bytes
+Date: Sat, 10 Aug 2024 14:56:49 GMT
+Via: 1.1 varnish
+X-Served-By: cache-mad22074-MAD
+X-Cache: MISS
+X-Cache-Hits: 0
+X-Timer: S1723301809.245019,VS0,VE201
+Vary: Authorization,Accept-Encoding,Origin
+Access-Control-Allow-Origin: *
+Cross-Origin-Resource-Policy: cross-origin
+X-Fastly-Request-ID: c5fd5c30d227d62c4e97eae7c12e5501bfc12bae
+Expires: Sat, 10 Aug 2024 15:01:49 GMT
+Source-Age: 0
+
+]
+[2024-08-10 16:56:49,467:INFO:main:>>>>>>>>> stage Data ingestion stage completed! <<<<<<]
+[2024-08-10 16:56:49,467:INFO:main:>>>>>>> stage Data validation stage STARTED]
+[2024-08-10 16:56:49,471:INFO:common:yaml file: config/config.yaml loaded successfully]
+[2024-08-10 16:56:49,473:INFO:common:yaml file: params.yaml loaded successfully]
+[2024-08-10 16:56:49,475:INFO:common:yaml file: schema.yaml loaded successfully]
+[2024-08-10 16:56:49,475:INFO:common:created directory at: artifacts]
+[2024-08-10 16:56:49,475:INFO:common:created directory at: artifacts/data_validation]
+[2024-08-10 16:56:49,492:INFO:main:>>>>>>>> stage Data validation stage COMPLETED]
+[2024-08-10 16:56:49,492:INFO:main:>>>>>>> Data Cleaning stage STARTED]
+[2024-08-10 16:56:49,495:INFO:common:yaml file: config/config.yaml loaded successfully]
+[2024-08-10 16:56:49,496:INFO:common:yaml file: params.yaml loaded successfully]
+[2024-08-10 16:56:49,497:INFO:common:yaml file: schema.yaml loaded successfully]
+[2024-08-10 16:56:49,497:INFO:common:created directory at: artifacts]
+[2024-08-10 16:56:49,497:INFO:common:created directory at: artifacts/data_cleaning]
+[2024-08-10 16:56:49,537:INFO:data_cleaning:Train and test data prepared and saved.]
+[2024-08-10 16:56:49,537:INFO:data_cleaning:Data shape after transformation: (1089, 2)]
+[2024-08-10 16:56:49,537:INFO:main:>>>>>>>> stage {STAGE_NAME} COMPLETED]
+[2024-08-10 16:56:49,537:INFO:main:>>>>>>>>>> Data preparation stage STARTED]
+[2024-08-10 16:56:49,539:INFO:common:yaml file: config/config.yaml loaded successfully]
+[2024-08-10 16:56:49,540:INFO:common:yaml file: params.yaml loaded successfully]
+[2024-08-10 16:56:49,540:INFO:common:yaml file: schema.yaml loaded successfully]
+[2024-08-10 16:56:49,540:INFO:common:created directory at: artifacts]
+[2024-08-10 16:56:49,540:INFO:common:created directory at: artifacts/data_preparation]
+[2024-08-10 16:56:49,542:INFO:data_preparation:Transform and split done!]
+[2024-08-10 16:56:49,552:INFO:data_preparation:Tensors succesfully saved in: artifacts/data_preparation/tensors.pt]
+[2024-08-10 16:56:49,552:INFO:main:>>>>>>>>>> Data preparation stage FINISHED]
+[2024-08-10 16:56:49,552:INFO:main:>>>>>>>>>> Model training stage STARTED]
+[2024-08-10 16:56:49,554:INFO:common:yaml file: config/config.yaml loaded successfully]
+[2024-08-10 16:56:49,555:INFO:common:yaml file: params.yaml loaded successfully]
+[2024-08-10 16:56:49,555:INFO:common:yaml file: schema.yaml loaded successfully]
+[2024-08-10 16:56:49,555:INFO:common:created directory at: artifacts]
+[2024-08-10 16:56:49,555:INFO:common:created directory at: artifacts/model_trainer]
+[2024-08-10 16:56:50,443:INFO:model_trainer:Train loss from Torch Model0.1992187452163886]
+[2024-08-10 16:56:50,536:INFO:model_trainer:Train loss from Torch Model0.13584739416414363]
+[2024-08-10 16:56:50,634:INFO:model_trainer:Train loss from Torch Model0.10072631147605451]
+[2024-08-10 16:56:50,727:INFO:model_trainer:Train loss from Torch Model0.06948442103616385]
+[2024-08-10 16:56:50,819:INFO:model_trainer:Train loss from Torch Model0.04388478030027314]
+[2024-08-10 16:56:50,912:INFO:model_trainer:Train loss from Torch Model0.02234303987841651]
+[2024-08-10 16:56:51,005:INFO:model_trainer:Train loss from Torch Model0.011270751882958311]
+[2024-08-10 16:56:51,098:INFO:model_trainer:Train loss from Torch Model0.006724874752850693]
+[2024-08-10 16:56:51,190:INFO:model_trainer:Train loss from Torch Model0.005594968679361045]
+[2024-08-10 16:56:51,284:INFO:model_trainer:Train loss from Torch Model0.005322136733659797]
+[2024-08-10 16:56:51,285:INFO:main:>>>>>>>>>> Model training stage FINISHED]
+[2024-08-10 16:56:51,285:INFO:main:>>>>>>>>>> Data evaluation stage STARTED]
+[2024-08-10 16:56:51,286:INFO:common:yaml file: config/config.yaml loaded successfully]
+[2024-08-10 16:56:51,287:INFO:common:yaml file: params.yaml loaded successfully]
+[2024-08-10 16:56:51,288:INFO:common:yaml file: schema.yaml loaded successfully]
+[2024-08-10 16:56:51,288:INFO:common:created directory at: artifacts]
+[2024-08-10 16:56:53,183:INFO:main:>>>>>>>>>> Data evaluation stage FINISHED]
+[2024-08-10 16:56:53,695:INFO:_internal:127.0.0.1 - - [10/Aug/2024 16:56:53] "GET /train HTTP/1.1" 200 -]
+[2024-08-10 17:01:29,855:INFO:_internal:127.0.0.1 - - [10/Aug/2024 17:01:29] "GET / HTTP/1.1" 200 -]
+[2024-08-10 17:11:53,228:INFO:_internal:127.0.0.1 - - [10/Aug/2024 17:11:53] "GET / HTTP/1.1" 200 -]
+[2024-08-10 17:12:31,858:INFO:_internal:127.0.0.1 - - [10/Aug/2024 17:12:31] "GET / HTTP/1.1" 200 -]
+[2024-08-10 17:13:06,210:INFO:_internal:127.0.0.1 - - [10/Aug/2024 17:13:06] "GET / HTTP/1.1" 200 -]
+[2024-08-10 17:14:24,610:INFO:_internal:127.0.0.1 - - [10/Aug/2024 17:14:24] "GET / HTTP/1.1" 200 -]
+[2024-08-10 17:14:26,130:INFO:_internal:127.0.0.1 - - [10/Aug/2024 17:14:26] "GET / HTTP/1.1" 200 -]

@@ -1,0 +1,22 @@
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;     
+    margin: 0;               
+    font-family: Arial, sans-serif;
+}
+
+div {
+    text-align: center; 
+}
+
+input {
+    margin-top: 10px;
+    padding: 5px;
+}
+
+label {
+    display: block; 
+    margin-bottom: 5px;
+}

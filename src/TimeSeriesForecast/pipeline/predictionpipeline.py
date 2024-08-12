@@ -10,7 +10,7 @@ class PredictionPipeline:
         self.model= torch.load(Path('artifacts/model_trainer/model.pt'))
         self.model= self.model.to(self.device)
         self.model.eval()
-        
+
     def predict(self,data):
         data= data.to(self.device)
         with torch.no_grad():
