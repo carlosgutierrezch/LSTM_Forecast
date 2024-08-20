@@ -2937,3 +2937,712 @@ Source-Age: 0
 [2024-08-10 17:13:06,210:INFO:_internal:127.0.0.1 - - [10/Aug/2024 17:13:06] "GET / HTTP/1.1" 200 -]
 [2024-08-10 17:14:24,610:INFO:_internal:127.0.0.1 - - [10/Aug/2024 17:14:24] "GET / HTTP/1.1" 200 -]
 [2024-08-10 17:14:26,130:INFO:_internal:127.0.0.1 - - [10/Aug/2024 17:14:26] "GET / HTTP/1.1" 200 -]
+[2024-08-12 10:56:36,395:INFO:_internal:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://10.2.192.195:8080]
+[2024-08-12 10:56:36,396:INFO:_internal:[33mPress CTRL+C to quit[0m]
+[2024-08-12 10:56:41,664:INFO:_internal:127.0.0.1 - - [12/Aug/2024 10:56:41] "GET / HTTP/1.1" 200 -]
+[2024-08-12 10:56:41,850:INFO:_internal:127.0.0.1 - - [12/Aug/2024 10:56:41] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -]
+[2024-08-12 10:56:46,105:ERROR:app:Exception on /predict [POST]]
+Traceback (most recent call last):
+  File "/Users/main/Desktop/LSTM_Forecast/time/lib/python3.11/site-packages/flask/app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/main/Desktop/LSTM_Forecast/time/lib/python3.11/site-packages/flask/app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/main/Desktop/LSTM_Forecast/time/lib/python3.11/site-packages/flask/app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/main/Desktop/LSTM_Forecast/time/lib/python3.11/site-packages/flask/app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/main/Desktop/LSTM_Forecast/app.py", line 33, in index
+    raise e
+  File "/Users/main/Desktop/LSTM_Forecast/app.py", line 26, in index
+    data= data.reshape((-1,1))
+          ^^^^^^^^^^^^
+AttributeError: 'float' object has no attribute 'reshape'
+[2024-08-12 10:56:46,109:INFO:_internal:127.0.0.1 - - [12/Aug/2024 10:56:46] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -]
+[2024-08-12 10:58:20,782:INFO:_internal:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://10.2.192.195:8080]
+[2024-08-12 10:58:20,782:INFO:_internal:[33mPress CTRL+C to quit[0m]
+[2024-08-12 11:01:01,360:INFO:_internal:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://10.2.192.195:8080]
+[2024-08-12 11:01:01,360:INFO:_internal:[33mPress CTRL+C to quit[0m]
+[2024-08-12 11:01:04,205:INFO:_internal:127.0.0.1 - - [12/Aug/2024 11:01:04] "GET / HTTP/1.1" 200 -]
+[2024-08-12 11:02:19,386:INFO:_internal:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://10.2.192.195:8080]
+[2024-08-12 11:02:19,387:INFO:_internal:[33mPress CTRL+C to quit[0m]
+[2024-08-12 11:02:21,837:INFO:_internal:127.0.0.1 - - [12/Aug/2024 11:02:21] "GET / HTTP/1.1" 200 -]
+[2024-08-12 11:02:38,625:INFO:helpers:Accessing as carlosgutierrezch]
+[2024-08-12 11:02:38,843:INFO:helpers:Initialized MLflow to track repo "carlosgutierrezch/ml-flow"]
+[2024-08-12 11:02:38,843:INFO:helpers:Repository carlosgutierrezch/ml-flow initialized!]
+[2024-08-12 11:02:38,844:INFO:main:>>>>>> stage Data ingestion stage started <<<<<]
+[2024-08-12 11:02:38,848:INFO:common:yaml file: config/config.yaml loaded successfully]
+[2024-08-12 11:02:38,851:INFO:common:yaml file: params.yaml loaded successfully]
+[2024-08-12 11:02:38,853:INFO:common:yaml file: schema.yaml loaded successfully]
+[2024-08-12 11:02:38,854:INFO:common:created directory at: artifacts]
+[2024-08-12 11:02:38,855:INFO:common:created directory at: artifacts/data_ingestion]
+[2024-08-12 11:02:39,928:INFO:data_ingestion:artifacts/data_ingestion/data-forecast.zip download! with following info: 
+Connection: close
+Content-Length: 48759
+Cache-Control: max-age=300
+Content-Security-Policy: default-src 'none'; style-src 'unsafe-inline'; sandbox
+Content-Type: application/zip
+ETag: "b242fa9b06100c658c6c8e3096b0d4b17390be7861c1ab51cdf6a2a7d19cf86c"
+Strict-Transport-Security: max-age=31536000
+X-Content-Type-Options: nosniff
+X-Frame-Options: deny
+X-XSS-Protection: 1; mode=block
+X-GitHub-Request-Id: D58E:37D49F:14F7DC:15D9DF:66B9CFAC
+Accept-Ranges: bytes
+Date: Mon, 12 Aug 2024 09:02:39 GMT
+Via: 1.1 varnish
+X-Served-By: cache-mad2200093-MAD
+X-Cache: MISS
+X-Cache-Hits: 0
+X-Timer: S1723453360.629915,VS0,VE236
+Vary: Authorization,Accept-Encoding,Origin
+Access-Control-Allow-Origin: *
+Cross-Origin-Resource-Policy: cross-origin
+X-Fastly-Request-ID: 3cfd0de6daad2836e4d417a23229e10f4f2355e5
+Expires: Mon, 12 Aug 2024 09:07:39 GMT
+Source-Age: 0
+
+]
+[2024-08-12 11:02:39,931:INFO:main:>>>>>>>>> stage Data ingestion stage completed! <<<<<<]
+[2024-08-12 11:02:39,931:INFO:main:>>>>>>> stage Data validation stage STARTED]
+[2024-08-12 11:02:39,935:INFO:common:yaml file: config/config.yaml loaded successfully]
+[2024-08-12 11:02:39,937:INFO:common:yaml file: params.yaml loaded successfully]
+[2024-08-12 11:02:39,938:INFO:common:yaml file: schema.yaml loaded successfully]
+[2024-08-12 11:02:39,938:INFO:common:created directory at: artifacts]
+[2024-08-12 11:02:39,938:INFO:common:created directory at: artifacts/data_validation]
+[2024-08-12 11:02:39,950:INFO:main:>>>>>>>> stage Data validation stage COMPLETED]
+[2024-08-12 11:02:39,950:INFO:main:>>>>>>> Data Cleaning stage STARTED]
+[2024-08-12 11:02:39,953:INFO:common:yaml file: config/config.yaml loaded successfully]
+[2024-08-12 11:02:39,954:INFO:common:yaml file: params.yaml loaded successfully]
+[2024-08-12 11:02:39,955:INFO:common:yaml file: schema.yaml loaded successfully]
+[2024-08-12 11:02:39,955:INFO:common:created directory at: artifacts]
+[2024-08-12 11:02:39,955:INFO:common:created directory at: artifacts/data_cleaning]
+[2024-08-12 11:02:39,995:INFO:data_cleaning:Train and test data prepared and saved.]
+[2024-08-12 11:02:39,995:INFO:data_cleaning:Data shape after transformation: (1089, 2)]
+[2024-08-12 11:02:39,996:INFO:main:>>>>>>>> stage {STAGE_NAME} COMPLETED]
+[2024-08-12 11:02:39,996:INFO:main:>>>>>>>>>> Data preparation stage STARTED]
+[2024-08-12 11:02:39,998:INFO:common:yaml file: config/config.yaml loaded successfully]
+[2024-08-12 11:02:39,999:INFO:common:yaml file: params.yaml loaded successfully]
+[2024-08-12 11:02:39,999:INFO:common:yaml file: schema.yaml loaded successfully]
+[2024-08-12 11:02:39,999:INFO:common:created directory at: artifacts]
+[2024-08-12 11:02:40,000:INFO:common:created directory at: artifacts/data_preparation]
+[2024-08-12 11:02:40,001:INFO:data_preparation:Transform and split done!]
+[2024-08-12 11:02:40,014:INFO:data_preparation:Tensors succesfully saved in: artifacts/data_preparation/tensors.pt]
+[2024-08-12 11:02:40,014:INFO:main:>>>>>>>>>> Data preparation stage FINISHED]
+[2024-08-12 11:02:40,014:INFO:main:>>>>>>>>>> Model training stage STARTED]
+[2024-08-12 11:02:40,016:INFO:common:yaml file: config/config.yaml loaded successfully]
+[2024-08-12 11:02:40,017:INFO:common:yaml file: params.yaml loaded successfully]
+[2024-08-12 11:02:40,017:INFO:common:yaml file: schema.yaml loaded successfully]
+[2024-08-12 11:02:40,017:INFO:common:created directory at: artifacts]
+[2024-08-12 11:02:40,017:INFO:common:created directory at: artifacts/model_trainer]
+[2024-08-12 11:02:41,862:INFO:model_trainer:Train loss from Torch Model0.1992187452163886]
+[2024-08-12 11:02:42,055:INFO:model_trainer:Train loss from Torch Model0.13584739416414363]
+[2024-08-12 11:02:42,214:INFO:model_trainer:Train loss from Torch Model0.10072631147605451]
+[2024-08-12 11:02:42,391:INFO:model_trainer:Train loss from Torch Model0.06948442103616385]
+[2024-08-12 11:02:42,606:INFO:model_trainer:Train loss from Torch Model0.04388478030027314]
+[2024-08-12 11:02:42,794:INFO:model_trainer:Train loss from Torch Model0.02234303987841651]
+[2024-08-12 11:02:42,944:INFO:model_trainer:Train loss from Torch Model0.011270751882958311]
+[2024-08-12 11:02:43,103:INFO:model_trainer:Train loss from Torch Model0.006724874752850693]
+[2024-08-12 11:02:43,286:INFO:model_trainer:Train loss from Torch Model0.005594968679361045]
+[2024-08-12 11:02:43,472:INFO:model_trainer:Train loss from Torch Model0.005322136733659797]
+[2024-08-12 11:02:43,474:INFO:main:>>>>>>>>>> Model training stage FINISHED]
+[2024-08-12 11:02:43,474:INFO:main:>>>>>>>>>> Data evaluation stage STARTED]
+[2024-08-12 11:02:43,478:INFO:common:yaml file: config/config.yaml loaded successfully]
+[2024-08-12 11:02:43,480:INFO:common:yaml file: params.yaml loaded successfully]
+[2024-08-12 11:02:43,481:INFO:common:yaml file: schema.yaml loaded successfully]
+[2024-08-12 11:02:43,481:INFO:common:created directory at: artifacts]
+[2024-08-12 11:02:45,641:INFO:main:>>>>>>>>>> Data evaluation stage FINISHED]
+[2024-08-12 11:02:46,485:INFO:_internal:127.0.0.1 - - [12/Aug/2024 11:02:46] "GET /train HTTP/1.1" 200 -]
+[2024-08-12 11:03:04,015:ERROR:app:Exception on /predict [POST]]
+Traceback (most recent call last):
+  File "/Users/main/Desktop/LSTM_Forecast/time/lib/python3.11/site-packages/flask/app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/main/Desktop/LSTM_Forecast/time/lib/python3.11/site-packages/flask/app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/main/Desktop/LSTM_Forecast/time/lib/python3.11/site-packages/flask/app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/main/Desktop/LSTM_Forecast/time/lib/python3.11/site-packages/flask/app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/main/Desktop/LSTM_Forecast/app.py", line 33, in index
+    raise e
+  File "/Users/main/Desktop/LSTM_Forecast/app.py", line 26, in index
+    data= data.reshape((-1,1))
+          ^^^^^^^^^^^^
+AttributeError: 'str' object has no attribute 'reshape'
+[2024-08-12 11:03:04,019:INFO:_internal:127.0.0.1 - - [12/Aug/2024 11:03:04] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -]
+[2024-08-12 11:06:29,718:INFO:helpers:Accessing as carlosgutierrezch]
+[2024-08-12 11:06:29,957:INFO:helpers:Initialized MLflow to track repo "carlosgutierrezch/ml-flow"]
+[2024-08-12 11:06:29,957:INFO:helpers:Repository carlosgutierrezch/ml-flow initialized!]
+[2024-08-12 11:06:29,957:INFO:main:>>>>>> stage Data ingestion stage started <<<<<]
+[2024-08-12 11:06:29,962:INFO:common:yaml file: config/config.yaml loaded successfully]
+[2024-08-12 11:06:29,966:INFO:common:yaml file: params.yaml loaded successfully]
+[2024-08-12 11:06:29,968:INFO:common:yaml file: schema.yaml loaded successfully]
+[2024-08-12 11:06:29,969:INFO:common:created directory at: artifacts]
+[2024-08-12 11:06:29,969:INFO:common:created directory at: artifacts/data_ingestion]
+[2024-08-12 11:06:30,762:INFO:data_ingestion:artifacts/data_ingestion/data-forecast.zip download! with following info: 
+Connection: close
+Content-Length: 48759
+Cache-Control: max-age=300
+Content-Security-Policy: default-src 'none'; style-src 'unsafe-inline'; sandbox
+Content-Type: application/zip
+ETag: "b242fa9b06100c658c6c8e3096b0d4b17390be7861c1ab51cdf6a2a7d19cf86c"
+Strict-Transport-Security: max-age=31536000
+X-Content-Type-Options: nosniff
+X-Frame-Options: deny
+X-XSS-Protection: 1; mode=block
+X-GitHub-Request-Id: D58E:37D49F:14F7DC:15D9DF:66B9CFAC
+Accept-Ranges: bytes
+Date: Mon, 12 Aug 2024 09:06:30 GMT
+Via: 1.1 varnish
+X-Served-By: cache-mad2200094-MAD
+X-Cache: HIT
+X-Cache-Hits: 0
+X-Timer: S1723453591.796623,VS0,VE1
+Vary: Authorization,Accept-Encoding,Origin
+Access-Control-Allow-Origin: *
+Cross-Origin-Resource-Policy: cross-origin
+X-Fastly-Request-ID: c2081a3a301269316a47f25f0575e6b3254cc33f
+Expires: Mon, 12 Aug 2024 09:11:30 GMT
+Source-Age: 231
+
+]
+[2024-08-12 11:06:30,765:INFO:main:>>>>>>>>> stage Data ingestion stage completed! <<<<<<]
+[2024-08-12 11:06:30,765:INFO:main:>>>>>>> stage Data validation stage STARTED]
+[2024-08-12 11:06:30,769:INFO:common:yaml file: config/config.yaml loaded successfully]
+[2024-08-12 11:06:30,770:INFO:common:yaml file: params.yaml loaded successfully]
+[2024-08-12 11:06:30,770:INFO:common:yaml file: schema.yaml loaded successfully]
+[2024-08-12 11:06:30,770:INFO:common:created directory at: artifacts]
+[2024-08-12 11:06:30,771:INFO:common:created directory at: artifacts/data_validation]
+[2024-08-12 11:06:30,778:INFO:main:>>>>>>>> stage Data validation stage COMPLETED]
+[2024-08-12 11:06:30,778:INFO:main:>>>>>>> Data Cleaning stage STARTED]
+[2024-08-12 11:06:30,780:INFO:common:yaml file: config/config.yaml loaded successfully]
+[2024-08-12 11:06:30,781:INFO:common:yaml file: params.yaml loaded successfully]
+[2024-08-12 11:06:30,782:INFO:common:yaml file: schema.yaml loaded successfully]
+[2024-08-12 11:06:30,782:INFO:common:created directory at: artifacts]
+[2024-08-12 11:06:30,782:INFO:common:created directory at: artifacts/data_cleaning]
+[2024-08-12 11:06:30,817:INFO:data_cleaning:Train and test data prepared and saved.]
+[2024-08-12 11:06:30,817:INFO:data_cleaning:Data shape after transformation: (1089, 2)]
+[2024-08-12 11:06:30,817:INFO:main:>>>>>>>> stage {STAGE_NAME} COMPLETED]
+[2024-08-12 11:06:30,817:INFO:main:>>>>>>>>>> Data preparation stage STARTED]
+[2024-08-12 11:06:30,821:INFO:common:yaml file: config/config.yaml loaded successfully]
+[2024-08-12 11:06:30,822:INFO:common:yaml file: params.yaml loaded successfully]
+[2024-08-12 11:06:30,823:INFO:common:yaml file: schema.yaml loaded successfully]
+[2024-08-12 11:06:30,823:INFO:common:created directory at: artifacts]
+[2024-08-12 11:06:30,824:INFO:common:created directory at: artifacts/data_preparation]
+[2024-08-12 11:06:30,826:INFO:data_preparation:Transform and split done!]
+[2024-08-12 11:06:30,828:INFO:data_preparation:Tensors succesfully saved in: artifacts/data_preparation/tensors.pt]
+[2024-08-12 11:06:30,828:INFO:main:>>>>>>>>>> Data preparation stage FINISHED]
+[2024-08-12 11:06:30,828:INFO:main:>>>>>>>>>> Model training stage STARTED]
+[2024-08-12 11:06:30,833:INFO:common:yaml file: config/config.yaml loaded successfully]
+[2024-08-12 11:06:30,834:INFO:common:yaml file: params.yaml loaded successfully]
+[2024-08-12 11:06:30,836:INFO:common:yaml file: schema.yaml loaded successfully]
+[2024-08-12 11:06:30,836:INFO:common:created directory at: artifacts]
+[2024-08-12 11:06:30,836:INFO:common:created directory at: artifacts/model_trainer]
+[2024-08-12 11:06:32,351:INFO:model_trainer:Train loss from Torch Model0.1992187452163886]
+[2024-08-12 11:06:32,563:INFO:model_trainer:Train loss from Torch Model0.13584739416414363]
+[2024-08-12 11:06:32,750:INFO:model_trainer:Train loss from Torch Model0.10072631147605451]
+[2024-08-12 11:06:32,905:INFO:model_trainer:Train loss from Torch Model0.06948442103616385]
+[2024-08-12 11:06:33,057:INFO:model_trainer:Train loss from Torch Model0.04388478030027314]
+[2024-08-12 11:06:33,225:INFO:model_trainer:Train loss from Torch Model0.02234303987841651]
+[2024-08-12 11:06:33,514:INFO:model_trainer:Train loss from Torch Model0.011270751882958311]
+[2024-08-12 11:06:33,715:INFO:model_trainer:Train loss from Torch Model0.006724874752850693]
+[2024-08-12 11:06:33,881:INFO:model_trainer:Train loss from Torch Model0.005594968679361045]
+[2024-08-12 11:06:34,036:INFO:model_trainer:Train loss from Torch Model0.005322136733659797]
+[2024-08-12 11:06:34,037:INFO:main:>>>>>>>>>> Model training stage FINISHED]
+[2024-08-12 11:06:34,037:INFO:main:>>>>>>>>>> Data evaluation stage STARTED]
+[2024-08-12 11:06:34,039:INFO:common:yaml file: config/config.yaml loaded successfully]
+[2024-08-12 11:06:34,040:INFO:common:yaml file: params.yaml loaded successfully]
+[2024-08-12 11:06:34,041:INFO:common:yaml file: schema.yaml loaded successfully]
+[2024-08-12 11:06:34,041:INFO:common:created directory at: artifacts]
+[2024-08-12 11:06:35,900:INFO:main:>>>>>>>>>> Data evaluation stage FINISHED]
+[2024-08-12 11:06:36,598:INFO:_internal:127.0.0.1 - - [12/Aug/2024 11:06:36] "GET /train HTTP/1.1" 200 -]
+[2024-08-12 11:07:38,551:INFO:_internal:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://10.2.192.195:8080]
+[2024-08-12 11:07:38,552:INFO:_internal:[33mPress CTRL+C to quit[0m]
+[2024-08-12 11:07:41,116:INFO:_internal:127.0.0.1 - - [12/Aug/2024 11:07:41] "GET / HTTP/1.1" 200 -]
+[2024-08-12 11:07:49,204:ERROR:app:Exception on /predict [POST]]
+Traceback (most recent call last):
+  File "/Users/main/Desktop/LSTM_Forecast/time/lib/python3.11/site-packages/flask/app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/main/Desktop/LSTM_Forecast/time/lib/python3.11/site-packages/flask/app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/main/Desktop/LSTM_Forecast/time/lib/python3.11/site-packages/flask/app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/main/Desktop/LSTM_Forecast/time/lib/python3.11/site-packages/flask/app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/main/Desktop/LSTM_Forecast/app.py", line 34, in index
+    raise e
+  File "/Users/main/Desktop/LSTM_Forecast/app.py", line 30, in index
+    predict= obj.predict(data)
+             ^^^^^^^^^^^^^^^^^
+  File "/Users/main/Desktop/LSTM_Forecast/src/TimeSeriesForecast/pipeline/predictionpipeline.py", line 17, in predict
+    prediction= self.model(data)
+                ^^^^^^^^^^^^^^^^
+  File "/Users/main/Desktop/LSTM_Forecast/time/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1532, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/main/Desktop/LSTM_Forecast/time/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1541, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/main/Desktop/LSTM_Forecast/notebooks/src/functions_torch.py", line 103, in forward
+    out,_ = self.lstm(x,(h0,c0))
+            ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/main/Desktop/LSTM_Forecast/time/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1532, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/main/Desktop/LSTM_Forecast/time/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1541, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/main/Desktop/LSTM_Forecast/time/lib/python3.11/site-packages/torch/nn/modules/rnn.py", line 903, in forward
+    raise RuntimeError(msg)
+RuntimeError: For unbatched 2-D input, hx and cx should also be 2-D but got (3-D, 3-D) tensors
+[2024-08-12 11:07:49,210:INFO:_internal:127.0.0.1 - - [12/Aug/2024 11:07:49] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -]
+[2024-08-12 11:15:15,270:INFO:helpers:Accessing as carlosgutierrezch]
+[2024-08-12 11:15:15,507:INFO:helpers:Initialized MLflow to track repo "carlosgutierrezch/ml-flow"]
+[2024-08-12 11:15:15,508:INFO:helpers:Repository carlosgutierrezch/ml-flow initialized!]
+[2024-08-12 11:15:15,508:INFO:main:>>>>>> stage Data ingestion stage started <<<<<]
+[2024-08-12 11:15:15,512:INFO:common:yaml file: config/config.yaml loaded successfully]
+[2024-08-12 11:15:15,514:INFO:common:yaml file: params.yaml loaded successfully]
+[2024-08-12 11:15:15,515:INFO:common:yaml file: schema.yaml loaded successfully]
+[2024-08-12 11:15:15,515:INFO:common:created directory at: artifacts]
+[2024-08-12 11:15:15,515:INFO:common:created directory at: artifacts/data_ingestion]
+[2024-08-12 11:15:16,497:INFO:data_ingestion:artifacts/data_ingestion/data-forecast.zip download! with following info: 
+Connection: close
+Content-Length: 48759
+Cache-Control: max-age=300
+Content-Security-Policy: default-src 'none'; style-src 'unsafe-inline'; sandbox
+Content-Type: application/zip
+ETag: "b242fa9b06100c658c6c8e3096b0d4b17390be7861c1ab51cdf6a2a7d19cf86c"
+Strict-Transport-Security: max-age=31536000
+X-Content-Type-Options: nosniff
+X-Frame-Options: deny
+X-XSS-Protection: 1; mode=block
+X-GitHub-Request-Id: D58E:37D49F:14F7DC:15D9DF:66B9CFAC
+Accept-Ranges: bytes
+Date: Mon, 12 Aug 2024 09:15:16 GMT
+Via: 1.1 varnish
+X-Served-By: cache-mad22035-MAD
+X-Cache: HIT
+X-Cache-Hits: 0
+X-Timer: S1723454116.378390,VS0,VE154
+Vary: Authorization,Accept-Encoding,Origin
+Access-Control-Allow-Origin: *
+Cross-Origin-Resource-Policy: cross-origin
+X-Fastly-Request-ID: 01dadb22368dd716744c4294fd78c51a575978ad
+Expires: Mon, 12 Aug 2024 09:20:16 GMT
+Source-Age: 0
+
+]
+[2024-08-12 11:15:16,501:INFO:main:>>>>>>>>> stage Data ingestion stage completed! <<<<<<]
+[2024-08-12 11:15:16,501:INFO:main:>>>>>>> stage Data validation stage STARTED]
+[2024-08-12 11:15:16,504:INFO:common:yaml file: config/config.yaml loaded successfully]
+[2024-08-12 11:15:16,505:INFO:common:yaml file: params.yaml loaded successfully]
+[2024-08-12 11:15:16,505:INFO:common:yaml file: schema.yaml loaded successfully]
+[2024-08-12 11:15:16,505:INFO:common:created directory at: artifacts]
+[2024-08-12 11:15:16,505:INFO:common:created directory at: artifacts/data_validation]
+[2024-08-12 11:15:16,513:INFO:main:>>>>>>>> stage Data validation stage COMPLETED]
+[2024-08-12 11:15:16,513:INFO:main:>>>>>>> Data Cleaning stage STARTED]
+[2024-08-12 11:15:16,514:INFO:common:yaml file: config/config.yaml loaded successfully]
+[2024-08-12 11:15:16,515:INFO:common:yaml file: params.yaml loaded successfully]
+[2024-08-12 11:15:16,515:INFO:common:yaml file: schema.yaml loaded successfully]
+[2024-08-12 11:15:16,516:INFO:common:created directory at: artifacts]
+[2024-08-12 11:15:16,516:INFO:common:created directory at: artifacts/data_cleaning]
+[2024-08-12 11:15:16,550:INFO:data_cleaning:Train and test data prepared and saved.]
+[2024-08-12 11:15:16,550:INFO:data_cleaning:Data shape after transformation: (1089, 2)]
+[2024-08-12 11:15:16,550:INFO:main:>>>>>>>> stage {STAGE_NAME} COMPLETED]
+[2024-08-12 11:15:16,550:INFO:main:>>>>>>>>>> Data preparation stage STARTED]
+[2024-08-12 11:15:16,552:INFO:common:yaml file: config/config.yaml loaded successfully]
+[2024-08-12 11:15:16,553:INFO:common:yaml file: params.yaml loaded successfully]
+[2024-08-12 11:15:16,554:INFO:common:yaml file: schema.yaml loaded successfully]
+[2024-08-12 11:15:16,554:INFO:common:created directory at: artifacts]
+[2024-08-12 11:15:16,555:INFO:common:created directory at: artifacts/data_preparation]
+[2024-08-12 11:15:16,556:INFO:data_preparation:Transform and split done!]
+[2024-08-12 11:15:16,568:INFO:data_preparation:Tensors succesfully saved in: artifacts/data_preparation/tensors.pt]
+[2024-08-12 11:15:16,568:INFO:main:>>>>>>>>>> Data preparation stage FINISHED]
+[2024-08-12 11:15:16,568:INFO:main:>>>>>>>>>> Model training stage STARTED]
+[2024-08-12 11:15:16,569:INFO:common:yaml file: config/config.yaml loaded successfully]
+[2024-08-12 11:15:16,571:INFO:common:yaml file: params.yaml loaded successfully]
+[2024-08-12 11:15:16,572:INFO:common:yaml file: schema.yaml loaded successfully]
+[2024-08-12 11:15:16,572:INFO:common:created directory at: artifacts]
+[2024-08-12 11:15:16,572:INFO:common:created directory at: artifacts/model_trainer]
+[2024-08-12 11:15:17,503:INFO:model_trainer:Train loss from Torch Model0.1992187452163886]
+[2024-08-12 11:15:17,591:INFO:model_trainer:Train loss from Torch Model0.13584739416414363]
+[2024-08-12 11:15:17,697:INFO:model_trainer:Train loss from Torch Model0.10072631147605451]
+[2024-08-12 11:15:17,790:INFO:model_trainer:Train loss from Torch Model0.06948442103616385]
+[2024-08-12 11:15:17,876:INFO:model_trainer:Train loss from Torch Model0.04388478030027314]
+[2024-08-12 11:15:17,963:INFO:model_trainer:Train loss from Torch Model0.02234303987841651]
+[2024-08-12 11:15:18,055:INFO:model_trainer:Train loss from Torch Model0.011270751882958311]
+[2024-08-12 11:15:18,145:INFO:model_trainer:Train loss from Torch Model0.006724874752850693]
+[2024-08-12 11:15:18,229:INFO:model_trainer:Train loss from Torch Model0.005594968679361045]
+[2024-08-12 11:15:18,312:INFO:model_trainer:Train loss from Torch Model0.005322136733659797]
+[2024-08-12 11:15:18,313:INFO:main:>>>>>>>>>> Model training stage FINISHED]
+[2024-08-12 11:15:18,313:INFO:main:>>>>>>>>>> Data evaluation stage STARTED]
+[2024-08-12 11:15:18,314:INFO:common:yaml file: config/config.yaml loaded successfully]
+[2024-08-12 11:15:18,315:INFO:common:yaml file: params.yaml loaded successfully]
+[2024-08-12 11:15:18,315:INFO:common:yaml file: schema.yaml loaded successfully]
+[2024-08-12 11:15:18,315:INFO:common:created directory at: artifacts]
+[2024-08-12 11:15:19,927:INFO:main:>>>>>>>>>> Data evaluation stage FINISHED]
+[2024-08-12 11:15:20,530:INFO:_internal:127.0.0.1 - - [12/Aug/2024 11:15:20] "GET /train HTTP/1.1" 200 -]
+[2024-08-12 11:18:04,587:INFO:_internal:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://10.2.192.195:8080]
+[2024-08-12 11:18:04,587:INFO:_internal:[33mPress CTRL+C to quit[0m]
+[2024-08-12 11:18:10,897:INFO:_internal:127.0.0.1 - - [12/Aug/2024 11:18:10] "GET / HTTP/1.1" 200 -]
+[2024-08-12 11:18:15,238:ERROR:app:Exception on /predict [POST]]
+Traceback (most recent call last):
+  File "/Users/main/Desktop/LSTM_Forecast/time/lib/python3.11/site-packages/flask/app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/main/Desktop/LSTM_Forecast/time/lib/python3.11/site-packages/flask/app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/main/Desktop/LSTM_Forecast/time/lib/python3.11/site-packages/flask/app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/main/Desktop/LSTM_Forecast/time/lib/python3.11/site-packages/flask/app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/main/Desktop/LSTM_Forecast/app.py", line 34, in index
+    raise e
+  File "/Users/main/Desktop/LSTM_Forecast/app.py", line 30, in index
+    predict= obj.predict(data)
+             ^^^^^^^^^^^^^^^^^
+  File "/Users/main/Desktop/LSTM_Forecast/src/TimeSeriesForecast/pipeline/predictionpipeline.py", line 15, in predict
+    data= data.to(self.device)
+          ^^^^^^^
+AttributeError: 'numpy.ndarray' object has no attribute 'to'
+[2024-08-12 11:18:15,240:INFO:_internal:127.0.0.1 - - [12/Aug/2024 11:18:15] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -]
+[2024-08-12 11:19:04,174:INFO:_internal:127.0.0.1 - - [12/Aug/2024 11:19:04] "GET / HTTP/1.1" 200 -]
+[2024-08-12 11:19:07,061:ERROR:app:Exception on /predict [POST]]
+Traceback (most recent call last):
+  File "/Users/main/Desktop/LSTM_Forecast/time/lib/python3.11/site-packages/flask/app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/main/Desktop/LSTM_Forecast/time/lib/python3.11/site-packages/flask/app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/main/Desktop/LSTM_Forecast/time/lib/python3.11/site-packages/flask/app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/main/Desktop/LSTM_Forecast/time/lib/python3.11/site-packages/flask/app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/main/Desktop/LSTM_Forecast/app.py", line 34, in index
+    raise e
+  File "/Users/main/Desktop/LSTM_Forecast/app.py", line 30, in index
+    predict= obj.predict(data)
+             ^^^^^^^^^^^^^^^^^
+  File "/Users/main/Desktop/LSTM_Forecast/src/TimeSeriesForecast/pipeline/predictionpipeline.py", line 15, in predict
+    # data= data.to(self.device)
+          ^^^^^^^
+AttributeError: 'numpy.ndarray' object has no attribute 'to'
+[2024-08-12 11:19:07,063:INFO:_internal:127.0.0.1 - - [12/Aug/2024 11:19:07] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -]
+[2024-08-12 11:19:49,881:INFO:_internal:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://10.2.192.195:8080]
+[2024-08-12 11:19:49,881:INFO:_internal:[33mPress CTRL+C to quit[0m]
+[2024-08-12 11:19:52,821:INFO:_internal:127.0.0.1 - - [12/Aug/2024 11:19:52] "GET / HTTP/1.1" 200 -]
+[2024-08-12 11:19:56,934:ERROR:app:Exception on /predict [POST]]
+Traceback (most recent call last):
+  File "/Users/main/Desktop/LSTM_Forecast/time/lib/python3.11/site-packages/flask/app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/main/Desktop/LSTM_Forecast/time/lib/python3.11/site-packages/flask/app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/main/Desktop/LSTM_Forecast/time/lib/python3.11/site-packages/flask/app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/main/Desktop/LSTM_Forecast/time/lib/python3.11/site-packages/flask/app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/main/Desktop/LSTM_Forecast/app.py", line 34, in index
+    raise e
+  File "/Users/main/Desktop/LSTM_Forecast/app.py", line 30, in index
+    predict= obj.predict(data)
+             ^^^^^^^^^^^^^^^^^
+  File "/Users/main/Desktop/LSTM_Forecast/src/TimeSeriesForecast/pipeline/predictionpipeline.py", line 17, in predict
+    prediction= self.model(data)
+                ^^^^^^^^^^^^^^^^
+  File "/Users/main/Desktop/LSTM_Forecast/time/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1532, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/main/Desktop/LSTM_Forecast/time/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1541, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/main/Desktop/LSTM_Forecast/notebooks/src/functions_torch.py", line 97, in forward
+    batch_size= x.size(0)
+                ^^^^^^^^^
+TypeError: 'int' object is not callable
+[2024-08-12 11:19:56,937:INFO:_internal:127.0.0.1 - - [12/Aug/2024 11:19:56] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -]
+[2024-08-12 11:46:29,571:INFO:_internal:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://10.2.192.195:8080]
+[2024-08-12 11:46:29,571:INFO:_internal:[33mPress CTRL+C to quit[0m]
+[2024-08-12 11:46:31,088:INFO:_internal:127.0.0.1 - - [12/Aug/2024 11:46:31] "GET / HTTP/1.1" 200 -]
+[2024-08-12 11:46:42,413:INFO:helpers:Accessing as carlosgutierrezch]
+[2024-08-12 11:46:42,699:INFO:helpers:Initialized MLflow to track repo "carlosgutierrezch/ml-flow"]
+[2024-08-12 11:46:42,700:INFO:helpers:Repository carlosgutierrezch/ml-flow initialized!]
+[2024-08-12 11:46:42,700:INFO:main:>>>>>> stage Data ingestion stage started <<<<<]
+[2024-08-12 11:46:42,704:INFO:common:yaml file: config/config.yaml loaded successfully]
+[2024-08-12 11:46:42,708:INFO:common:yaml file: params.yaml loaded successfully]
+[2024-08-12 11:46:42,709:INFO:common:yaml file: schema.yaml loaded successfully]
+[2024-08-12 11:46:42,709:INFO:common:created directory at: artifacts]
+[2024-08-12 11:46:42,709:INFO:common:created directory at: artifacts/data_ingestion]
+[2024-08-12 11:46:42,709:INFO:data_ingestion:File already exists of size: ~ 48 KB]
+[2024-08-12 11:46:42,713:INFO:main:>>>>>>>>> stage Data ingestion stage completed! <<<<<<]
+[2024-08-12 11:46:42,713:INFO:main:>>>>>>> stage Data validation stage STARTED]
+[2024-08-12 11:46:42,716:INFO:common:yaml file: config/config.yaml loaded successfully]
+[2024-08-12 11:46:42,718:INFO:common:yaml file: params.yaml loaded successfully]
+[2024-08-12 11:46:42,718:INFO:common:yaml file: schema.yaml loaded successfully]
+[2024-08-12 11:46:42,719:INFO:common:created directory at: artifacts]
+[2024-08-12 11:46:42,719:INFO:common:created directory at: artifacts/data_validation]
+[2024-08-12 11:46:42,729:INFO:main:>>>>>>>> stage Data validation stage COMPLETED]
+[2024-08-12 11:46:42,729:INFO:main:>>>>>>> Data Cleaning stage STARTED]
+[2024-08-12 11:46:42,731:INFO:common:yaml file: config/config.yaml loaded successfully]
+[2024-08-12 11:46:42,732:INFO:common:yaml file: params.yaml loaded successfully]
+[2024-08-12 11:46:42,733:INFO:common:yaml file: schema.yaml loaded successfully]
+[2024-08-12 11:46:42,733:INFO:common:created directory at: artifacts]
+[2024-08-12 11:46:42,733:INFO:common:created directory at: artifacts/data_cleaning]
+[2024-08-12 11:46:42,765:INFO:data_cleaning:Train and test data prepared and saved.]
+[2024-08-12 11:46:42,765:INFO:data_cleaning:Data shape after transformation: (1089, 2)]
+[2024-08-12 11:46:42,765:INFO:main:>>>>>>>> stage {STAGE_NAME} COMPLETED]
+[2024-08-12 11:46:42,765:INFO:main:>>>>>>>>>> Data preparation stage STARTED]
+[2024-08-12 11:46:42,767:INFO:common:yaml file: config/config.yaml loaded successfully]
+[2024-08-12 11:46:42,767:INFO:common:yaml file: params.yaml loaded successfully]
+[2024-08-12 11:46:42,768:INFO:common:yaml file: schema.yaml loaded successfully]
+[2024-08-12 11:46:42,768:INFO:common:created directory at: artifacts]
+[2024-08-12 11:46:42,768:INFO:common:created directory at: artifacts/data_preparation]
+[2024-08-12 11:46:42,770:INFO:data_preparation:Transform and split done!]
+[2024-08-12 11:46:42,779:INFO:data_preparation:Tensors succesfully saved in: artifacts/data_preparation/tensors.pt]
+[2024-08-12 11:46:42,779:INFO:main:>>>>>>>>>> Data preparation stage FINISHED]
+[2024-08-12 11:46:42,779:INFO:main:>>>>>>>>>> Model training stage STARTED]
+[2024-08-12 11:46:42,781:INFO:common:yaml file: config/config.yaml loaded successfully]
+[2024-08-12 11:46:42,781:INFO:common:yaml file: params.yaml loaded successfully]
+[2024-08-12 11:46:42,782:INFO:common:yaml file: schema.yaml loaded successfully]
+[2024-08-12 11:46:42,782:INFO:common:created directory at: artifacts]
+[2024-08-12 11:46:42,782:INFO:common:created directory at: artifacts/model_trainer]
+[2024-08-12 11:46:43,805:INFO:model_trainer:Train loss from Torch Model0.1992187452163886]
+[2024-08-12 11:46:43,896:INFO:model_trainer:Train loss from Torch Model0.13584739416414363]
+[2024-08-12 11:46:43,987:INFO:model_trainer:Train loss from Torch Model0.10072631147605451]
+[2024-08-12 11:46:44,077:INFO:model_trainer:Train loss from Torch Model0.06948442103616385]
+[2024-08-12 11:46:44,183:INFO:model_trainer:Train loss from Torch Model0.04388478030027314]
+[2024-08-12 11:46:44,271:INFO:model_trainer:Train loss from Torch Model0.02234303987841651]
+[2024-08-12 11:46:44,362:INFO:model_trainer:Train loss from Torch Model0.011270751882958311]
+[2024-08-12 11:46:44,449:INFO:model_trainer:Train loss from Torch Model0.006724874752850693]
+[2024-08-12 11:46:44,547:INFO:model_trainer:Train loss from Torch Model0.005594968679361045]
+[2024-08-12 11:46:44,651:INFO:model_trainer:Train loss from Torch Model0.005322136733659797]
+[2024-08-12 11:46:44,652:INFO:main:>>>>>>>>>> Model training stage FINISHED]
+[2024-08-12 11:46:44,652:INFO:main:>>>>>>>>>> Data evaluation stage STARTED]
+[2024-08-12 11:46:44,653:INFO:common:yaml file: config/config.yaml loaded successfully]
+[2024-08-12 11:46:44,654:INFO:common:yaml file: params.yaml loaded successfully]
+[2024-08-12 11:46:44,655:INFO:common:yaml file: schema.yaml loaded successfully]
+[2024-08-12 11:46:44,656:INFO:common:created directory at: artifacts]
+[2024-08-12 11:46:46,419:INFO:main:>>>>>>>>>> Data evaluation stage FINISHED]
+[2024-08-12 11:46:46,948:INFO:_internal:127.0.0.1 - - [12/Aug/2024 11:46:46] "GET /train HTTP/1.1" 200 -]
+[2024-08-12 11:47:43,731:ERROR:app:Exception on /predict [POST]]
+Traceback (most recent call last):
+  File "/Users/main/Desktop/LSTM_Forecast/time/lib/python3.11/site-packages/flask/app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/main/Desktop/LSTM_Forecast/time/lib/python3.11/site-packages/flask/app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/main/Desktop/LSTM_Forecast/time/lib/python3.11/site-packages/flask/app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/main/Desktop/LSTM_Forecast/time/lib/python3.11/site-packages/flask/app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/main/Desktop/LSTM_Forecast/app.py", line 31, in index
+    raise e
+  File "/Users/main/Desktop/LSTM_Forecast/app.py", line 27, in index
+    predict= obj.predict(num_days)
+             ^^^^^^^^^^^^^^^^^^^^^
+TypeError: PredictionPipeline.predict() missing 1 required positional argument: 'num_days'
+[2024-08-12 11:47:43,734:INFO:_internal:127.0.0.1 - - [12/Aug/2024 11:47:43] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -]
+[2024-08-12 11:50:18,207:ERROR:app:Exception on /predict [POST]]
+Traceback (most recent call last):
+  File "/Users/main/Desktop/LSTM_Forecast/time/lib/python3.11/site-packages/flask/app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/main/Desktop/LSTM_Forecast/time/lib/python3.11/site-packages/flask/app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/main/Desktop/LSTM_Forecast/time/lib/python3.11/site-packages/flask/app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/main/Desktop/LSTM_Forecast/time/lib/python3.11/site-packages/flask/app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/main/Desktop/LSTM_Forecast/app.py", line 31, in index
+    raise e
+  File "/Users/main/Desktop/LSTM_Forecast/app.py", line 27, in index
+    predict= obj.predict(num_days)
+             ^^^^^^^^^^^^^^^^^^^^^
+TypeError: PredictionPipeline.predict() missing 1 required positional argument: 'num_days'
+[2024-08-12 11:50:18,209:INFO:_internal:127.0.0.1 - - [12/Aug/2024 11:50:18] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -]
+[2024-08-12 11:50:50,618:INFO:_internal:127.0.0.1 - - [12/Aug/2024 11:50:50] "GET / HTTP/1.1" 200 -]
+[2024-08-12 11:50:53,994:ERROR:app:Exception on /predict [POST]]
+Traceback (most recent call last):
+  File "/Users/main/Desktop/LSTM_Forecast/time/lib/python3.11/site-packages/flask/app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/main/Desktop/LSTM_Forecast/time/lib/python3.11/site-packages/flask/app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/main/Desktop/LSTM_Forecast/time/lib/python3.11/site-packages/flask/app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/main/Desktop/LSTM_Forecast/time/lib/python3.11/site-packages/flask/app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/main/Desktop/LSTM_Forecast/app.py", line 31, in index
+    raise e
+  File "/Users/main/Desktop/LSTM_Forecast/app.py", line 27, in index
+    predict= obj.predict(5)
+             ^^^^^^^^^^^^^^^
+TypeError: PredictionPipeline.predict() missing 1 required positional argument: 'num_days'
+[2024-08-12 11:50:53,996:INFO:_internal:127.0.0.1 - - [12/Aug/2024 11:50:53] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -]
+[2024-08-12 11:52:37,081:ERROR:app:Exception on /predict [POST]]
+Traceback (most recent call last):
+  File "/Users/main/Desktop/LSTM_Forecast/time/lib/python3.11/site-packages/flask/app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/main/Desktop/LSTM_Forecast/time/lib/python3.11/site-packages/flask/app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/main/Desktop/LSTM_Forecast/time/lib/python3.11/site-packages/flask/app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/main/Desktop/LSTM_Forecast/time/lib/python3.11/site-packages/flask/app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/main/Desktop/LSTM_Forecast/app.py", line 31, in index
+    raise e
+  File "/Users/main/Desktop/LSTM_Forecast/app.py", line 27, in index
+    predict= obj.predict(5)
+             ^^^^^^^^^^^^^^^
+TypeError: PredictionPipeline.predict() missing 1 required positional argument: 'num_days'
+[2024-08-12 11:52:37,083:INFO:_internal:127.0.0.1 - - [12/Aug/2024 11:52:37] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -]
+[2024-08-12 11:53:28,103:ERROR:app:Exception on /predict [POST]]
+Traceback (most recent call last):
+  File "/Users/main/Desktop/LSTM_Forecast/time/lib/python3.11/site-packages/flask/app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/main/Desktop/LSTM_Forecast/time/lib/python3.11/site-packages/flask/app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/main/Desktop/LSTM_Forecast/time/lib/python3.11/site-packages/flask/app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/main/Desktop/LSTM_Forecast/time/lib/python3.11/site-packages/flask/app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/main/Desktop/LSTM_Forecast/app.py", line 31, in index
+    raise e
+  File "/Users/main/Desktop/LSTM_Forecast/app.py", line 27, in index
+    predict= obj.predict(5)
+             ^^^^^^^^^^^^^^^
+TypeError: PredictionPipeline.predict() missing 1 required positional argument: 'num_days'
+[2024-08-12 11:53:28,104:INFO:_internal:127.0.0.1 - - [12/Aug/2024 11:53:28] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -]
+[2024-08-12 11:53:56,893:ERROR:app:Exception on /predict [POST]]
+Traceback (most recent call last):
+  File "/Users/main/Desktop/LSTM_Forecast/time/lib/python3.11/site-packages/flask/app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/main/Desktop/LSTM_Forecast/time/lib/python3.11/site-packages/flask/app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/main/Desktop/LSTM_Forecast/time/lib/python3.11/site-packages/flask/app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/main/Desktop/LSTM_Forecast/time/lib/python3.11/site-packages/flask/app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/main/Desktop/LSTM_Forecast/app.py", line 31, in index
+    raise e
+  File "/Users/main/Desktop/LSTM_Forecast/app.py", line 27, in index
+    predict= obj.predict(num_days=5)
+             ^^^^^^^^^^^^^^^^^^^^^
+TypeError: PredictionPipeline.predict() missing 1 required positional argument: 'num_days'
+[2024-08-12 11:53:56,896:INFO:_internal:127.0.0.1 - - [12/Aug/2024 11:53:56] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -]
+[2024-08-12 11:57:50,803:ERROR:app:Exception on /predict [POST]]
+Traceback (most recent call last):
+  File "/Users/main/Desktop/LSTM_Forecast/time/lib/python3.11/site-packages/flask/app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/main/Desktop/LSTM_Forecast/time/lib/python3.11/site-packages/flask/app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/main/Desktop/LSTM_Forecast/time/lib/python3.11/site-packages/flask/app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/main/Desktop/LSTM_Forecast/time/lib/python3.11/site-packages/flask/app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/main/Desktop/LSTM_Forecast/app.py", line 31, in index
+    raise e
+  File "/Users/main/Desktop/LSTM_Forecast/app.py", line 27, in index
+    predict= obj.predict(num_days=5)
+             ^^^^^^^^^^^^^^^^^^^^^
+TypeError: PredictionPipeline.predict() missing 1 required positional argument: 'num_days'
+[2024-08-12 11:57:50,809:INFO:_internal:127.0.0.1 - - [12/Aug/2024 11:57:50] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -]
+[2024-08-12 11:58:10,847:INFO:_internal:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://10.2.192.195:8080]
+[2024-08-12 11:58:10,847:INFO:_internal:[33mPress CTRL+C to quit[0m]
+[2024-08-12 11:58:13,131:INFO:_internal:127.0.0.1 - - [12/Aug/2024 11:58:13] "GET / HTTP/1.1" 200 -]
+[2024-08-12 11:58:17,949:ERROR:app:Exception on /predict [POST]]
+Traceback (most recent call last):
+  File "/Users/main/Desktop/LSTM_Forecast/time/lib/python3.11/site-packages/flask/app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/main/Desktop/LSTM_Forecast/time/lib/python3.11/site-packages/flask/app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/main/Desktop/LSTM_Forecast/time/lib/python3.11/site-packages/flask/app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/main/Desktop/LSTM_Forecast/time/lib/python3.11/site-packages/flask/app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/main/Desktop/LSTM_Forecast/app.py", line 31, in index
+    raise e
+  File "/Users/main/Desktop/LSTM_Forecast/app.py", line 27, in index
+    predict= obj.predict(num_days=5)
+             ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/main/Desktop/LSTM_Forecast/src/TimeSeriesForecast/pipeline/predictionpipeline.py", line 20, in predict
+    data= torch.tensor(last_know_data).float().to(self.device).unsqueeze(0)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: Could not infer dtype of NoneType
+[2024-08-12 11:58:17,951:INFO:_internal:127.0.0.1 - - [12/Aug/2024 11:58:17] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -]

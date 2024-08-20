@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prediction Results</title>
+</head>
+<body>
+    <h1>Predicted Stock Prices for the Next {{ predictions|length }} Days:</h1>
+    <ul>
+        {% for prediction in predictions %}
+            <li>Day {{ loop.index }}: {{ prediction }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

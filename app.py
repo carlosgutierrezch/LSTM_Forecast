@@ -1,5 +1,5 @@
 from flask import Flask, render_template, request
-
+import torch
 import os
 import numpy as np  
 import pandas as pd   
@@ -17,11 +17,20 @@ def HomePage():
 def training():
     os.system('python main.py')
     return 'Training succesfull'
+
 @app.route('/predict',methods=['GET','POST'])
 def index():
-    try: 
-        days= request.form['predictions']
-        
+    if request.method == 'POST':
+        try: 
+            num_days = int(request.form['predictions'])
+            obj= PredictionPipeline()
+            predict= obj.predict(num_days=5)
+            return render_template('results.html',prediction=float(predict))
+        except Exception as e:
+            print('There is something wrong!')
+            raise e
+    else:
+        return render_template('index.html')
 if __name__=='__main__':
-    app.run(host="0.0.0.0",port=8080,debug=True)
+    app.run(host="0.0.0.0",port=8080)#debug=True)
     
