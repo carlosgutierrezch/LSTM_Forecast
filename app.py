@@ -13,6 +13,7 @@ app= Flask(__name__)
 @app.route('/',methods=['GET'])
 def HomePage():
     return render_template('index.html')
+
 @app.route('/train',methods=['GET'])
 def training():
     os.system('python main.py')
